@@ -13,9 +13,15 @@ export default function Home() {
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      <div className={styles.nav_wrapper}>
+        <div className="wrapper">
+          <Image src={"/logo.svg"} width={206} height={40} />
+        </div>
+      </div>
       <main>
-        <Image src={"/logo.svg"} width={206} height={40} />
-        <h1>Massdropping Crypto in a Ducky Way</h1>
+        <div className="wrapper">
+          <h1 className={styles.title}>Massdropping Crypto in a Ducky Way</h1>
+        </div>
       </main>
     </div>
   );

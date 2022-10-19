@@ -8,7 +8,9 @@
   font-family: "Chillax-Bold";
   src: url("/fonts/Chillax-Bold.ttf");
 }
-h1 {
-  font-family: "Chillax-Bold";
-  color: #fff;
+.wrapper {
+  max-width: 1280px;
+  position: relative;
+  padding: 0 40px;
+  margin: 0 auto;
 }
