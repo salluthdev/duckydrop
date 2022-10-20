@@ -5,6 +5,18 @@
   box-sizing: border-box;
 }
 @font-face {
+  font-family: "Chillax-Regular";
+  src: url("/fonts/Chillax-Regular.ttf");
+}
+@font-face {
+  font-family: "Chillax-Medium";
+  src: url("/fonts/Chillax-Medium.ttf");
+}
+@font-face {
+  font-family: "Chillax-Semibold";
+  src: url("/fonts/Chillax-Medium.ttf");
+}
+@font-face {
   font-family: "Chillax-Bold";
   src: url("/fonts/Chillax-Bold.ttf");
 }
@@ -13,4 +25,25 @@
   position: relative;
   padding: 0 40px;
   margin: 0 auto;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-family: "Chillax-Regular";
+}
+button {
+  font-family: "Chillax-Medium";
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: 0.2s;
+}
+button:hover {
+  transform: scale(1.08);
 }
