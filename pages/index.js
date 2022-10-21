@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Ducky Drop - Do Airdrop, Get Ducky</title>
+        <title>Ducky Drop - Do Airdrop, Get $DUCKY</title>
         <meta
           name="description"
           content="Want to send a crypto airdrop? Use Ducky Drop and massdropping crypto in a ducky way!"
