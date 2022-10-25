@@ -1,24 +1,23 @@
 * {
-  background: #0a0a0b;
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 @font-face {
-  font-family: "Chillax-Regular";
-  src: url("/fonts/Chillax-Regular.ttf");
+  font-family: "Poppins";
+  src: url("/fonts/Poppins-Regular.otf");
 }
 @font-face {
   font-family: "Chillax-Medium";
   src: url("/fonts/Chillax-Medium.ttf");
 }
 @font-face {
-  font-family: "Chillax-Semibold";
-  src: url("/fonts/Chillax-Medium.ttf");
+  font-family: "MonumentExtended-Regular";
+  src: url("/fonts/MonumentExtended-Regular.otf");
 }
 @font-face {
-  font-family: "Chillax-Bold";
-  src: url("/fonts/Chillax-Bold.ttf");
+  font-family: "MonumentExtended-Ultrabold";
+  src: url("/fonts/MonumentExtended-Ultrabold.otf");
 }
 .wrapper {
   max-width: 1280px;
@@ -32,8 +31,27 @@ h3,
 h4,
 h5,
 h6,
-p {
-  font-family: "Chillax-Regular";
+p,
+a {
+  font-family: "Poppins";
+}
+h1 {
+  font-family: "MonumentExtended-Ultrabold";
+  font-weight: 800;
+  font-size: 52px;
+  letter-spacing: 2px;
+  color: #fff;
+}
+h1 span {
+  background: radial-gradient(
+    100% 100% at 50% 0%,
+    #fffb9d 14.47%,
+    #ffd912 50.07%,
+    #eba900 100%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 button {
   font-family: "Chillax-Medium";

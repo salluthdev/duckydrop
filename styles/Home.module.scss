@@ -1,0 +1,130 @@
+.container {
+  background: #0a0a0b;
+}
+.navbar {
+  height: 80px;
+  padding-top: 24px;
+  .nav_wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .nav_content_wrapper {
+      display: flex;
+      align-items: center;
+      gap: 60px;
+      nav {
+        display: flex;
+        align-items: center;
+        gap: 40px;
+        a {
+          color: #fff;
+          cursor: pointer;
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+      button {
+        color: #102001;
+        background: radial-gradient(
+          100% 100% at 50% 0%,
+          #d4ff9d 14.47%,
+          #89ff12 50.07%,
+          #75eb00 100%
+        );
+        border-radius: 40px;
+        padding: 12px 36px;
+      }
+    }
+  }
+}
+.hero {
+  min-height: calc(100vh - 80px);
+  display: flex;
+  align-items: center;
+  padding-bottom: 40px;
+  .hero_wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 52px;
+    h1 {
+      max-width: 880px;
+      font-size: 56px;
+      text-align: center;
+    }
+    .taglines_wrapper {
+      display: flex;
+      align-items: center;
+      gap: 32px;
+      .tagline {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        p {
+          color: #fff;
+          opacity: 0.5;
+        }
+      }
+    }
+    button {
+      font-size: 18px;
+      color: #102001;
+      background: radial-gradient(
+        100% 100% at 50% 0%,
+        #fffb9d 14.47%,
+        #ffd912 50.07%,
+        #eba900 100%
+      );
+      border-radius: 80px;
+      padding: 16px 32px;
+    }
+  }
+}
+.ducky_go_go {
+  margin-bottom: 120px;
+  .section_wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .content {
+      max-width: 500px;
+      h1 {
+        margin: 20px 0;
+      }
+      p {
+        line-height: 24px;
+        color: rgba(255, 255, 255, 0.6);
+      }
+    }
+    .char {
+      position: relative;
+    }
+  }
+}
+.subtitle_decoration {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  p {
+    font-family: "MonumentExtended-Regular";
+    font-size: 12px;
+    letter-spacing: 1px;
+    color: #f7c70b !important;
+  }
+}
+.do_airdrop_get_ducky {
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  h1 {
+    max-width: 600px;
+    text-align: center;
+    margin: 24px 0;
+  }
+  p {
+    color: #ffffff99;
+  }
+}
