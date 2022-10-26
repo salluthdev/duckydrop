@@ -125,7 +125,7 @@ export default function Home() {
           </p>
           <div className={styles.card_vector_wrapper}>
             <Image
-              src={"/img/card-get-ducky.png"}
+              src={"/svg/card-get-ducky.svg"}
               layout="fill"
               objectFit="contain"
             />
