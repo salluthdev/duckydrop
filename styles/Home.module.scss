@@ -83,7 +83,7 @@
   }
 }
 .ducky_go_go {
-  margin-bottom: 120px;
+  padding-bottom: 120px;
   .section_wrapper {
     display: flex;
     justify-content: space-between;
@@ -115,16 +115,95 @@
   }
 }
 .do_airdrop_get_ducky {
-  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 120px;
+  h1 {
+    max-width: 600px;
+    text-align: center;
+    margin: 20px 0;
+  }
+  p {
+    max-width: 780px;
+    text-align: center;
+    color: #ffffff99;
+  }
+  .card_vector_wrapper {
+    position: relative;
+    width: 480px;
+    height: 400px;
+    margin-top: 40px;
+  }
+}
+.our_product {
+  min-height: 800px;
   display: flex;
   flex-direction: column;
   align-items: center;
   h1 {
-    max-width: 600px;
+    max-width: 640px;
     text-align: center;
-    margin: 24px 0;
+    margin: 20px 0;
   }
   p {
     color: #ffffff99;
+  }
+  .product_card_wrapper {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-top: 64px;
+    .product_card {
+      width: 260px;
+      height: 360px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      background: radial-gradient(
+        100% 100% at 50% 0%,
+        #fffb9d 14.47%,
+        #ffd912 50.07%,
+        #eba900 100%
+      );
+      border-radius: 12px;
+      padding: 24px;
+      .content_wrapper {
+        .content_top {
+          width: 100%;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+        }
+        .content_mid {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 12px;
+          margin-top: 28px;
+          h2 {
+            font-family: "Poppins-Bold";
+            text-align: center;
+            line-height: 32px;
+            color: #0a0a0c;
+          }
+          p {
+            font-size: 14px;
+            text-align: center;
+            color: #000;
+          }
+        }
+      }
+      .icon_wrapper {
+        width: 70px;
+        height: 70px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #0a0a0c;
+        border-radius: 50%;
+      }
+    }
   }
 }

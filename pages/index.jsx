@@ -123,6 +123,134 @@ export default function Home() {
             Drop platform as one of the marketing campaign tools for their
             project.
           </p>
+          <div className={styles.card_vector_wrapper}>
+            <Image
+              src={"/img/card-get-ducky.png"}
+              layout="fill"
+              objectFit="contain"
+            />
+          </div>
+        </section>
+        <section className={styles.our_product}>
+          <div className={styles.subtitle_decoration}>
+            <Image src={"/svg/icon-x.svg"} width={20} height={20} />
+            <p>This is Our Product</p>
+            <Image src={"/svg/icon-x.svg"} width={20} height={20} />
+          </div>
+          <h1>
+            Get the best <span>product</span> from us
+          </h1>
+          <p>
+            We have provided 4 of the best products that are ready for you to
+            use on our platform.
+          </p>
+          <div className={styles.product_card_wrapper}>
+            <div className={styles.product_card}>
+              <div className={styles.content_wrapper}>
+                <div className={styles.content_top}>
+                  <Image
+                    src={"/svg/card-product-top-left.svg"}
+                    width={32}
+                    height={32}
+                  />
+                  <Image
+                    src={"/svg/card-product-top-mid.svg"}
+                    width={94}
+                    height={23}
+                  />
+                  <Image
+                    src={"/svg/card-product-top-right.svg"}
+                    width={23}
+                    height={23}
+                  />
+                </div>
+                <div className={styles.content_mid}>
+                  <h2>Multi-Chain DApp</h2>
+                  <p>
+                    Allows users to bridging with pegged tokens or liquidity
+                    pools.
+                  </p>
+                </div>
+              </div>
+              <div className={styles.icon_wrapper}>
+                <Image
+                  src={"/svg/card-product-icon-cube.svg"}
+                  width={40}
+                  height={40}
+                />
+              </div>
+            </div>
+            <div className={styles.product_card}>
+              <div className={styles.content_wrapper}>
+                <div className={styles.content_top}>
+                  <Image
+                    src={"/svg/card-product-top-left.svg"}
+                    width={32}
+                    height={32}
+                  />
+                  <Image
+                    src={"/svg/card-product-top-mid.svg"}
+                    width={94}
+                    height={23}
+                  />
+                  <Image
+                    src={"/svg/card-product-top-right.svg"}
+                    width={23}
+                    height={23}
+                  />
+                </div>
+                <div className={styles.content_mid}>
+                  <h2>Multi-Chain DApp</h2>
+                  <p>
+                    Allows users to bridging with pegged tokens or liquidity
+                    pools.
+                  </p>
+                </div>
+              </div>
+              <div className={styles.icon_wrapper}>
+                <Image
+                  src={"/svg/card-product-icon-cube.svg"}
+                  width={40}
+                  height={40}
+                />
+              </div>
+            </div>
+            <div className={styles.product_card}>
+              <div className={styles.content_wrapper}>
+                <div className={styles.content_top}>
+                  <Image
+                    src={"/svg/card-product-top-left.svg"}
+                    width={32}
+                    height={32}
+                  />
+                  <Image
+                    src={"/svg/card-product-top-mid.svg"}
+                    width={94}
+                    height={23}
+                  />
+                  <Image
+                    src={"/svg/card-product-top-right.svg"}
+                    width={23}
+                    height={23}
+                  />
+                </div>
+                <div className={styles.content_mid}>
+                  <h2>Multi-Chain DApp</h2>
+                  <p>
+                    Allows users to bridging with pegged tokens or liquidity
+                    pools.
+                  </p>
+                </div>
+              </div>
+              <div className={styles.icon_wrapper}>
+                <Image
+                  src={"/svg/card-product-icon-cube.svg"}
+                  width={40}
+                  height={40}
+                />
+              </div>
+            </div>
+          </div>
         </section>
       </main>
     </div>

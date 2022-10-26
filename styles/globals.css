@@ -4,8 +4,12 @@
   box-sizing: border-box;
 }
 @font-face {
-  font-family: "Poppins";
+  font-family: "Poppins-Regular";
   src: url("/fonts/Poppins-Regular.otf");
+}
+@font-face {
+  font-family: "Poppins-Bold";
+  src: url("/fonts/Poppins-Bold.otf");
 }
 @font-face {
   font-family: "Chillax-Medium";
@@ -33,7 +37,7 @@ h5,
 h6,
 p,
 a {
-  font-family: "Poppins";
+  font-family: "Poppins-Regular";
 }
 h1 {
   font-family: "MonumentExtended-Ultrabold";
