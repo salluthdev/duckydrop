@@ -183,6 +183,7 @@
           gap: 12px;
           margin-top: 28px;
           h2 {
+            max-width: 160px;
             font-family: "Poppins-Bold";
             text-align: center;
             line-height: 32px;
@@ -204,6 +205,30 @@
         background: #0a0a0c;
         border-radius: 50%;
       }
+    }
+    .product_card.green {
+      background: radial-gradient(
+        100% 100% at 50% 0%,
+        #d4ff9d 14.47%,
+        #89ff12 50.07%,
+        #75eb00 100%
+      );
+    }
+    .product_card.blue {
+      background: radial-gradient(
+        100% 100% at 50% 0%,
+        #9dedff 14.47%,
+        #12e3ff 50.07%,
+        #00a4eb 100%
+      );
+    }
+    .product_card.purple {
+      background: radial-gradient(
+        100% 100% at 50% 0%,
+        #ff9def 14.47%,
+        #ff12e7 50.07%,
+        #eb00b7 100%
+      );
     }
   }
 }
