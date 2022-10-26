@@ -174,7 +174,7 @@ export default function Home() {
               </div>
               <div className={styles.icon_wrapper}>
                 <Image
-                  src={"/svg/card-product-icon-cube.svg"}
+                  src={"/svg/card-product-yellow-icon.svg"}
                   width={40}
                   height={40}
                 />
@@ -209,7 +209,7 @@ export default function Home() {
               </div>
               <div className={styles.icon_wrapper}>
                 <Image
-                  src={"/svg/card-product-icon-cube.svg"}
+                  src={"/svg/card-product-green-icon.svg"}
                   width={40}
                   height={40}
                 />
@@ -244,7 +244,7 @@ export default function Home() {
               </div>
               <div className={styles.icon_wrapper}>
                 <Image
-                  src={"/svg/card-product-icon-cube.svg"}
+                  src={"/svg/card-product-blue-icon.svg"}
                   width={40}
                   height={40}
                 />
@@ -279,7 +279,7 @@ export default function Home() {
               </div>
               <div className={styles.icon_wrapper}>
                 <Image
-                  src={"/svg/card-product-icon-cube.svg"}
+                  src={"/svg/card-product-purple-icon.svg"}
                   width={40}
                   height={40}
                 />
