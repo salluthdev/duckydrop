@@ -113,6 +113,9 @@
     letter-spacing: 1px;
     color: #f7c70b !important;
   }
+  p.black {
+    color: #0a0a0c !important;
+  }
 }
 .do_airdrop_get_ducky {
   display: flex;
@@ -232,14 +235,72 @@
     }
   }
 }
+.our_flow {
+  background: #f7c70b;
+  padding: 64px 0 60px;
+  .section_wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h2 {
+      font-family: "MonumentExtended-Regular";
+      font-size: 44px;
+      font-weight: 400;
+      color: #0a0a0c;
+      margin: 20px 0;
+    }
+    p {
+      color: #0a0a0ccc;
+    }
+    .flow_wrapper {
+      display: flex;
+      align-items: center;
+      margin-top: 48px;
+      .flow {
+        width: 180px;
+        min-height: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #0a0a0c;
+        border-radius: 240px;
+        padding: 16px;
+        p {
+          color: #fff;
+        }
+      }
+    }
+  }
+}
 .our_partners {
-  min-height: 400px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  padding-top: 120px;
+  .section_wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .logos_wrapper {
+      width: 100%;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      justify-content: space-between;
+      gap: 40px;
+      margin-top: 80px;
+      .logo_wrapper {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .logo {
+          position: relative;
+          width: 200px;
+          height: 40px;
+        }
+      }
+    }
+  }
 }
 .tokenomics {
-  min-height: 800px;
+  padding-top: 120px;
   .section_wrapper {
     display: flex;
     flex-direction: column;
