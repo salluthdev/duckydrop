@@ -508,10 +508,31 @@
 .footer {
   min-height: 400px;
   padding: 80px;
+  align-items: center;
   .footer_wrapper {
+    display: flex;
     flex-wrap: wrap;
-    h2 {
+    justify-content: space-between;
+
+    h4 {
       color: #fff;
     }
+    p {
+      color: #ffffff99;
+    }
+    a {
+      text-decoration: none;
+    }
+  }
+  .footer_titles {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+  .content_footer {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    cursor: pointer;
   }
 }

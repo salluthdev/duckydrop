@@ -1,3 +1,4 @@
+import { useRouter } from "next/router";
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
@@ -88,9 +89,9 @@ export default function Home() {
           <div className={`wrapper ${styles.section_wrapper}`}>
             <div className={styles.content}>
               <div className={styles.subtitle_decoration}>
-                <Image src={"/svg/icon-x-yellow.svg"} width={20} height={20} />
+                <Image src={"/svg/icon-x.svg"} width={20} height={20} />
                 <p>Connect Your Wallet</p>
-                <Image src={"/svg/icon-x-yellow.svg"} width={20} height={20} />
+                <Image src={"/svg/icon-x.svg"} width={20} height={20} />
               </div>
               <h1>
                 Ducky <span>Ducky</span> Go Go
@@ -109,9 +110,9 @@ export default function Home() {
         </section>
         <section className={styles.do_airdrop_get_ducky}>
           <div className={styles.subtitle_decoration}>
-            <Image src={"/svg/icon-x-yellow.svg"} width={20} height={20} />
+            <Image src={"/svg/icon-x.svg"} width={20} height={20} />
             <p>Use the Ducky Drop Platform</p>
-            <Image src={"/svg/icon-x-yellow.svg"} width={20} height={20} />
+            <Image src={"/svg/icon-x.svg"} width={20} height={20} />
           </div>
           <h1>
             Do Airdrop and Get <span>$Ducky</span>
@@ -133,9 +134,9 @@ export default function Home() {
         </section>
         <section className={styles.our_product}>
           <div className={styles.subtitle_decoration}>
-            <Image src={"/svg/icon-x-yellow.svg"} width={20} height={20} />
+            <Image src={"/svg/icon-x.svg"} width={20} height={20} />
             <p>This is Our Product</p>
-            <Image src={"/svg/icon-x-yellow.svg"} width={20} height={20} />
+            <Image src={"/svg/icon-x.svg"} width={20} height={20} />
           </div>
           <h1>
             Get the best <span>product</span> from us
@@ -288,140 +289,19 @@ export default function Home() {
           </div>
         </section>
         <section className={styles.our_flow}>
-          <div className={`wrapper ${styles.section_wrapper}`}>
-            <div className={styles.subtitle_decoration}>
-              <Image src={"/svg/icon-x-black.svg"} width={20} height={20} />
-              <p className={styles.black}>Step for Use</p>
-              <Image src={"/svg/icon-x-black.svg"} width={20} height={20} />
-            </div>
-            <h2>Our Flow</h2>
-            <p>Learn the steps or process how to use our platform.</p>
-            <div className={styles.flow_wrapper}>
-              <div className={styles.flow}>
-                <p>Connect Wallet</p>
-              </div>
-              <Image
-                src={"/svg/our-flow-connector.svg"}
-                width={56}
-                height={24}
-              />
-              <div className={styles.flow}>
-                <p>Choose Network</p>
-              </div>
-              <Image
-                src={"/svg/our-flow-connector.svg"}
-                width={56}
-                height={24}
-              />
-              <div className={styles.flow}>
-                <p>Paste Address</p>
-              </div>
-              <Image
-                src={"/svg/our-flow-connector.svg"}
-                width={56}
-                height={24}
-              />
-              <div className={styles.flow}>
-                <p>Insert Wallet</p>
-              </div>
-              <Image
-                src={"/svg/our-flow-connector.svg"}
-                width={56}
-                height={24}
-              />
-              <div className={styles.flow}>
-                <p>Ducky</p>
-              </div>
-            </div>
-          </div>
+          <div className="wrapper"></div>
         </section>
         <section className={styles.our_partners}>
-          <div className={`wrapper ${styles.section_wrapper}`}>
-            <h1>
-              Our <span>Partners</span>
-            </h1>
-            <div className={styles.logos_wrapper}>
-              <div className={styles.logo_wrapper}>
-                <div className={styles.logo}>
-                  <Image
-                    src={"/img/partners/ethereum.png"}
-                    layout="fill"
-                    objectFit="contain"
-                  />
-                </div>
-              </div>
-              <div className={styles.logo_wrapper}>
-                <div className={styles.logo}>
-                  <Image
-                    src={"/img/partners/binance.png"}
-                    layout="fill"
-                    objectFit="contain"
-                  />
-                </div>
-              </div>
-              <div className={styles.logo_wrapper}>
-                <div className={styles.logo}>
-                  <Image
-                    src={"/img/partners/polygon.png"}
-                    layout="fill"
-                    objectFit="contain"
-                  />
-                </div>
-              </div>
-              <div className={styles.logo_wrapper}>
-                <div className={styles.logo}>
-                  <Image
-                    src={"/img/partners/fantom.png"}
-                    layout="fill"
-                    objectFit="contain"
-                  />
-                </div>
-              </div>
-              <div className={styles.logo_wrapper}>
-                <div className={styles.logo}>
-                  <Image
-                    src={"/img/partners/avalanche.png"}
-                    layout="fill"
-                    objectFit="contain"
-                  />
-                </div>
-              </div>
-              <div className={styles.logo_wrapper}>
-                <div className={styles.logo}>
-                  <Image
-                    src={"/img/partners/coin-market-cap.png"}
-                    layout="fill"
-                    objectFit="contain"
-                  />
-                </div>
-              </div>
-              <div className={styles.logo_wrapper}>
-                <div className={styles.logo}>
-                  <Image
-                    src={"/img/partners/coin-gecko.png"}
-                    layout="fill"
-                    objectFit="contain"
-                  />
-                </div>
-              </div>
-              <div className={styles.logo_wrapper}>
-                <div className={styles.logo}>
-                  <Image
-                    src={"/img/partners/bsc-scan.png"}
-                    layout="fill"
-                    objectFit="contain"
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
+          <h1>
+            Our <span>Partners</span>
+          </h1>
         </section>
         <section className={styles.tokenomics}>
           <div className={`wrapper ${styles.section_wrapper}`}>
             <div className={styles.subtitle_decoration}>
-              <Image src={"/svg/icon-x-yellow.svg"} width={20} height={20} />
+              <Image src={"/svg/icon-x.svg"} width={20} height={20} />
               <p>Our Token Management</p>
-              <Image src={"/svg/icon-x-yellow.svg"} width={20} height={20} />
+              <Image src={"/svg/icon-x.svg"} width={20} height={20} />
             </div>
             <h1>Tokenomics</h1>
             <p>
@@ -455,114 +335,12 @@ export default function Home() {
               </div>
             </div>
             <div className={styles.range_wrapper}>
-              <div className={styles.range}>
-                <div className={styles.content_top}>
-                  <div className={styles.left}>
-                    <p className={styles.title}>Private Sale</p>
-                    <p>15% TGE, then 17% monthly</p>
-                  </div>
-                  <div className={styles.allocation}>
-                    <p>
-                      Allocations: <span>20%</span>
-                    </p>
-                  </div>
-                </div>
-                <div className={styles.range_bar}>
-                  <div className={`${styles.range_value} ${styles.yellow}`}>
-                    <div className={styles.dot}></div>
-                  </div>
-                </div>
-              </div>
-              <div className={styles.range}>
-                <div className={styles.content_top}>
-                  <div className={styles.left}>
-                    <p className={styles.title}>Private Sale</p>
-                    <p>15% TGE, then 17% monthly</p>
-                  </div>
-                  <div className={styles.allocation}>
-                    <p>
-                      Allocations: <span>25%</span>
-                    </p>
-                  </div>
-                </div>
-                <div className={styles.range_bar}>
-                  <div className={`${styles.range_value} ${styles.green}`}>
-                    <div className={styles.dot}></div>
-                  </div>
-                </div>
-              </div>
-              <div className={styles.range}>
-                <div className={styles.content_top}>
-                  <div className={styles.left}>
-                    <p className={styles.title}>Rewards</p>
-                    <p>3 Months cliff, then 10% monthly</p>
-                  </div>
-                  <div className={styles.allocation}>
-                    <p>
-                      Allocations: <span>15%</span>
-                    </p>
-                  </div>
-                </div>
-                <div className={styles.range_bar}>
-                  <div className={`${styles.range_value} ${styles.purple}`}>
-                    <div className={styles.dot}></div>
-                  </div>
-                </div>
-              </div>
-              <div className={styles.range}>
-                <div className={styles.content_top}>
-                  <div className={styles.left}>
-                    <p className={styles.title}>Public Sale</p>
-                    <p>30% TGE, then 35% monthly</p>
-                  </div>
-                  <div className={styles.allocation}>
-                    <p>
-                      Allocations: <span>10%</span>
-                    </p>
-                  </div>
-                </div>
-                <div className={styles.range_bar}>
-                  <div className={`${styles.range_value} ${styles.orange}`}>
-                    <div className={styles.dot}></div>
-                  </div>
-                </div>
-              </div>
-              <div className={styles.range}>
-                <div className={styles.content_top}>
-                  <div className={styles.left}>
-                    <p className={styles.title}>Team</p>
-                    <p>6 Months cliff, then 10% monthly</p>
-                  </div>
-                  <div className={styles.allocation}>
-                    <p>
-                      Allocations: <span>10%</span>
-                    </p>
-                  </div>
-                </div>
-                <div className={styles.range_bar}>
-                  <div className={`${styles.range_value} ${styles.blue}`}>
-                    <div className={styles.dot}></div>
-                  </div>
-                </div>
-              </div>
-              <div className={styles.range}>
-                <div className={styles.content_top}>
-                  <div className={styles.left}>
-                    <p className={styles.title}>Private Sale</p>
-                    <p>15% TGE, then 17% monthly</p>
-                  </div>
-                  <div className={styles.allocation}>
-                    <p>
-                      Allocations: <span>10%</span>
-                    </p>
-                  </div>
-                </div>
-                <div className={styles.range_bar}>
-                  <div className={`${styles.range_value} ${styles.pink}`}>
-                    <div className={styles.dot}></div>
-                  </div>
-                </div>
-              </div>
+              <div className={styles.range}></div>
+              <div className={styles.range}></div>
+              <div className={styles.range}></div>
+              <div className={styles.range}></div>
+              <div className={styles.range}></div>
+              <div className={styles.range}></div>
             </div>
           </div>
         </section>
