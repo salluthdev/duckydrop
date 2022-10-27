@@ -402,7 +402,7 @@ export default function Home() {
 							))}
 							{/* Buy Ducky Sections */}
 							{footerValues.buy_ducky.map((values) => (
-								<div className={styles.footer_titles}>
+								<div key={values.ps_name} className={styles.footer_titles}>
 									<h4>Buy Ducky</h4>
 									{/* PancakeSwap */}
 									<Link href={values.ps_link}>
@@ -436,7 +436,7 @@ export default function Home() {
 							))}
 							{/* Markets Sections */}
 							{footerValues.markets.map((values) => (
-								<div className={styles.footer_titles}>
+								<div key={values.gecko_name} className={styles.footer_titles}>
 									<h4>Markets</h4>
 									{/* Coin Gecko */}
 									<Link href={values.gecko_link}>
@@ -469,7 +469,7 @@ export default function Home() {
 								</div>
 							))}
 							{footerValues.information.map((values) => (
-								<div className={styles.footer_titles}>
+								<div key={values.name} className={styles.footer_titles}>
 									<h4>Information</h4>
 									<div className={styles.content_footer}>
 										<p>{values.name}</p>
