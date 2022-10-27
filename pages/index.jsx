@@ -149,7 +149,7 @@ export default function Home() {
               <div className={styles.content_wrapper}>
                 <div className={styles.content_top}>
                   <Image
-                    src={"/svg/card-product-top-left.svg"}
+                    src={"/svg/card-product-top-left-yellow.svg"}
                     width={32}
                     height={32}
                   />
@@ -174,7 +174,7 @@ export default function Home() {
               </div>
               <div className={styles.icon_wrapper}>
                 <Image
-                  src={"/svg/card-product-yellow-icon.svg"}
+                  src={"/svg/card-product-icon-yellow.svg"}
                   width={40}
                   height={40}
                 />
@@ -184,7 +184,7 @@ export default function Home() {
               <div className={styles.content_wrapper}>
                 <div className={styles.content_top}>
                   <Image
-                    src={"/svg/card-product-top-left.svg"}
+                    src={"/svg/card-product-top-left-green.svg"}
                     width={32}
                     height={32}
                   />
@@ -209,7 +209,7 @@ export default function Home() {
               </div>
               <div className={styles.icon_wrapper}>
                 <Image
-                  src={"/svg/card-product-green-icon.svg"}
+                  src={"/svg/card-product-icon-green.svg"}
                   width={40}
                   height={40}
                 />
@@ -219,7 +219,7 @@ export default function Home() {
               <div className={styles.content_wrapper}>
                 <div className={styles.content_top}>
                   <Image
-                    src={"/svg/card-product-top-left.svg"}
+                    src={"/svg/card-product-top-left-blue.svg"}
                     width={32}
                     height={32}
                   />
@@ -244,7 +244,7 @@ export default function Home() {
               </div>
               <div className={styles.icon_wrapper}>
                 <Image
-                  src={"/svg/card-product-blue-icon.svg"}
+                  src={"/svg/card-product-icon-blue.svg"}
                   width={40}
                   height={40}
                 />
@@ -254,7 +254,7 @@ export default function Home() {
               <div className={styles.content_wrapper}>
                 <div className={styles.content_top}>
                   <Image
-                    src={"/svg/card-product-top-left.svg"}
+                    src={"/svg/card-product-top-left-purple.svg"}
                     width={32}
                     height={32}
                   />
@@ -279,7 +279,7 @@ export default function Home() {
               </div>
               <div className={styles.icon_wrapper}>
                 <Image
-                  src={"/svg/card-product-purple-icon.svg"}
+                  src={"/svg/card-product-icon-purple.svg"}
                   width={40}
                   height={40}
                 />
@@ -287,7 +287,75 @@ export default function Home() {
             </div>
           </div>
         </section>
+        <section className={styles.our_flow}>
+          <div className="wrapper"></div>
+        </section>
+        <section className={styles.our_partners}>
+          <h1>
+            Our <span>Partners</span>
+          </h1>
+        </section>
+        <section className={styles.tokenomics}>
+          <div className={`wrapper ${styles.section_wrapper}`}>
+            <div className={styles.subtitle_decoration}>
+              <Image src={"/svg/icon-x.svg"} width={20} height={20} />
+              <p>Our Token Management</p>
+              <Image src={"/svg/icon-x.svg"} width={20} height={20} />
+            </div>
+            <h1>Tokenomics</h1>
+            <p>
+              Know the characteristics of our demand, supply of assets and also
+              token management.
+            </p>
+            <div className={styles.card_wrapper}>
+              <div className={styles.card}>
+                <div className={styles.label}>
+                  <p>Total Supply</p>
+                </div>
+                <div className={styles.value}>
+                  <p>100,000,000</p>
+                </div>
+              </div>
+              <div className={styles.card}>
+                <div className={styles.label}>
+                  <p>Token Network</p>
+                </div>
+                <div className={styles.value}>
+                  <p>BEP-20</p>
+                </div>
+              </div>
+              <div className={styles.card}>
+                <div className={styles.label}>
+                  <p>Ticker</p>
+                </div>
+                <div className={styles.value}>
+                  <p>$DUCKY</p>
+                </div>
+              </div>
+            </div>
+            <div className={styles.range_wrapper}>
+              <div className={styles.range}></div>
+              <div className={styles.range}></div>
+              <div className={styles.range}></div>
+              <div className={styles.range}></div>
+              <div className={styles.range}></div>
+              <div className={styles.range}></div>
+            </div>
+          </div>
+        </section>
+        <section className={styles.our_roadmap}>
+          <div className={`wrapper ${styles.section_wrapper}`}>
+            <h1>
+              Our <span>Roadmap</span>
+            </h1>
+          </div>
+        </section>
       </main>
+      <footer className={styles.footer}>
+        <div className={`wrapper ${styles.footer_wrapper}`}>
+          <h2>Social Channels</h2>
+        </div>
+      </footer>
     </div>
   );
 }
