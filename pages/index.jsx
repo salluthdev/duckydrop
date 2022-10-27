@@ -455,12 +455,114 @@ export default function Home() {
               </div>
             </div>
             <div className={styles.range_wrapper}>
-              <div className={styles.range}></div>
-              <div className={styles.range}></div>
-              <div className={styles.range}></div>
-              <div className={styles.range}></div>
-              <div className={styles.range}></div>
-              <div className={styles.range}></div>
+              <div className={styles.range}>
+                <div className={styles.content_top}>
+                  <div className={styles.left}>
+                    <p className={styles.title}>Private Sale</p>
+                    <p>15% TGE, then 17% monthly</p>
+                  </div>
+                  <div className={styles.allocation}>
+                    <p>
+                      Allocations: <span>20%</span>
+                    </p>
+                  </div>
+                </div>
+                <div className={styles.range_bar}>
+                  <div className={`${styles.range_value} ${styles.yellow}`}>
+                    <div className={styles.dot}></div>
+                  </div>
+                </div>
+              </div>
+              <div className={styles.range}>
+                <div className={styles.content_top}>
+                  <div className={styles.left}>
+                    <p className={styles.title}>Private Sale</p>
+                    <p>15% TGE, then 17% monthly</p>
+                  </div>
+                  <div className={styles.allocation}>
+                    <p>
+                      Allocations: <span>25%</span>
+                    </p>
+                  </div>
+                </div>
+                <div className={styles.range_bar}>
+                  <div className={`${styles.range_value} ${styles.green}`}>
+                    <div className={styles.dot}></div>
+                  </div>
+                </div>
+              </div>
+              <div className={styles.range}>
+                <div className={styles.content_top}>
+                  <div className={styles.left}>
+                    <p className={styles.title}>Rewards</p>
+                    <p>3 Months cliff, then 10% monthly</p>
+                  </div>
+                  <div className={styles.allocation}>
+                    <p>
+                      Allocations: <span>15%</span>
+                    </p>
+                  </div>
+                </div>
+                <div className={styles.range_bar}>
+                  <div className={`${styles.range_value} ${styles.purple}`}>
+                    <div className={styles.dot}></div>
+                  </div>
+                </div>
+              </div>
+              <div className={styles.range}>
+                <div className={styles.content_top}>
+                  <div className={styles.left}>
+                    <p className={styles.title}>Public Sale</p>
+                    <p>30% TGE, then 35% monthly</p>
+                  </div>
+                  <div className={styles.allocation}>
+                    <p>
+                      Allocations: <span>10%</span>
+                    </p>
+                  </div>
+                </div>
+                <div className={styles.range_bar}>
+                  <div className={`${styles.range_value} ${styles.orange}`}>
+                    <div className={styles.dot}></div>
+                  </div>
+                </div>
+              </div>
+              <div className={styles.range}>
+                <div className={styles.content_top}>
+                  <div className={styles.left}>
+                    <p className={styles.title}>Team</p>
+                    <p>6 Months cliff, then 10% monthly</p>
+                  </div>
+                  <div className={styles.allocation}>
+                    <p>
+                      Allocations: <span>10%</span>
+                    </p>
+                  </div>
+                </div>
+                <div className={styles.range_bar}>
+                  <div className={`${styles.range_value} ${styles.blue}`}>
+                    <div className={styles.dot}></div>
+                  </div>
+                </div>
+              </div>
+              <div className={styles.range}>
+                <div className={styles.content_top}>
+                  <div className={styles.left}>
+                    <p className={styles.title}>Private Sale</p>
+                    <p>15% TGE, then 17% monthly</p>
+                  </div>
+                  <div className={styles.allocation}>
+                    <p>
+                      Allocations: <span>10%</span>
+                    </p>
+                  </div>
+                </div>
+                <div className={styles.range_bar}>
+                  <div className={`${styles.range_value} ${styles.pink}`}>
+                    <div className={styles.dot}></div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </section>
