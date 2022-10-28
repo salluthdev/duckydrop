@@ -95,7 +95,7 @@ export default function Home() {
       </header>
       <main>
         <section className={styles.hero}>
-          <div data-aos="zoom-out" className={`wrapper ${styles.hero_wrapper}`}>
+          <div className={`wrapper ${styles.hero_wrapper}`}>
             <h1>
               Massdropping Crypto in a <span>Ducky</span> Way
             </h1>
