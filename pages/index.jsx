@@ -13,6 +13,10 @@ export default function Home() {
     });
   }, []);
 
+  useEffect(() => {
+    document.fonts.load("Poppins-Regular").then(() => setIsReady(true));
+  }, []);
+
   const FOOTER_DATA = [
     {
       social_section: [
