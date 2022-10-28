@@ -73,3 +73,31 @@ button {
 button:hover {
   transform: scale(1.08);
 }
+[data-aos="range-20"] {
+  width: 4%;
+  transition-property: width;
+  &.aos-animate {
+    width: 20%;
+  }
+}
+[data-aos="range-25"] {
+  width: 4%;
+  transition-property: width;
+  &.aos-animate {
+    width: 25%;
+  }
+}
+[data-aos="range-15"] {
+  width: 4%;
+  transition-property: width;
+  &.aos-animate {
+    width: 15%;
+  }
+}
+[data-aos="range-10"] {
+  width: 4%;
+  transition-property: width;
+  &.aos-animate {
+    width: 10%;
+  }
+}

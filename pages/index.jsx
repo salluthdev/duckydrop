@@ -14,7 +14,6 @@ export default function Home() {
   }, []);
 
   const { setIsReady } = useState(false);
-
   useEffect(() => {
     document.fonts.load("Poppins-Regular").then(() => setIsReady(true));
   }, []);
@@ -436,7 +435,11 @@ export default function Home() {
             </h1>
             <div className={styles.logos_wrapper}>
               <div className={styles.logo_wrapper}>
-                <div className={styles.logo}>
+                <div
+                  className={styles.logo}
+                  data-aos="zoom-in"
+                  data-aos-delay="400"
+                >
                   <Image
                     src={"/img/partners/ethereum.png"}
                     layout="fill"
@@ -445,7 +448,11 @@ export default function Home() {
                 </div>
               </div>
               <div className={styles.logo_wrapper}>
-                <div className={styles.logo}>
+                <div
+                  className={styles.logo}
+                  data-aos="zoom-in"
+                  data-aos-delay="200"
+                >
                   <Image
                     src={"/img/partners/binance.png"}
                     layout="fill"
@@ -454,7 +461,11 @@ export default function Home() {
                 </div>
               </div>
               <div className={styles.logo_wrapper}>
-                <div className={styles.logo}>
+                <div
+                  className={styles.logo}
+                  data-aos="zoom-in"
+                  data-aos-delay="600"
+                >
                   <Image
                     src={"/img/partners/polygon.png"}
                     layout="fill"
@@ -463,7 +474,11 @@ export default function Home() {
                 </div>
               </div>
               <div className={styles.logo_wrapper}>
-                <div className={styles.logo}>
+                <div
+                  className={styles.logo}
+                  data-aos="zoom-in"
+                  data-aos-delay="200"
+                >
                   <Image
                     src={"/img/partners/fantom.png"}
                     layout="fill"
@@ -472,7 +487,11 @@ export default function Home() {
                 </div>
               </div>
               <div className={styles.logo_wrapper}>
-                <div className={styles.logo}>
+                <div
+                  className={styles.logo}
+                  data-aos="zoom-in"
+                  data-aos-delay="400"
+                >
                   <Image
                     src={"/img/partners/avalanche.png"}
                     layout="fill"
@@ -481,7 +500,11 @@ export default function Home() {
                 </div>
               </div>
               <div className={styles.logo_wrapper}>
-                <div className={styles.logo}>
+                <div
+                  className={styles.logo}
+                  data-aos="zoom-in"
+                  data-aos-delay="600"
+                >
                   <Image
                     src={"/img/partners/coin-market-cap.png"}
                     layout="fill"
@@ -490,7 +513,11 @@ export default function Home() {
                 </div>
               </div>
               <div className={styles.logo_wrapper}>
-                <div className={styles.logo}>
+                <div
+                  className={styles.logo}
+                  data-aos="zoom-in"
+                  data-aos-delay="200"
+                >
                   <Image
                     src={"/img/partners/coin-gecko.png"}
                     layout="fill"
@@ -499,7 +526,11 @@ export default function Home() {
                 </div>
               </div>
               <div className={styles.logo_wrapper}>
-                <div className={styles.logo}>
+                <div
+                  className={styles.logo}
+                  data-aos="zoom-in"
+                  data-aos-delay="400"
+                >
                   <Image
                     src={"/img/partners/bsc-scan.png"}
                     layout="fill"
@@ -522,7 +553,7 @@ export default function Home() {
               Know the characteristics of our demand, supply of assets and also
               token management.
             </p>
-            <div className={styles.card_wrapper} data-aos="fade-up">
+            <div className={styles.card_wrapper}>
               <div className={styles.card}>
                 <div className={styles.label}>
                   <p>Total Supply</p>
@@ -562,7 +593,11 @@ export default function Home() {
                   </div>
                 </div>
                 <div className={styles.range_bar}>
-                  <div className={`${styles.range_value} ${styles.yellow}`}>
+                  <div
+                    className={`${styles.range_value} ${styles.yellow}`}
+                    data-aos="range-20"
+                    data-aos-delay="400"
+                  >
                     <div className={styles.dot}></div>
                   </div>
                 </div>
@@ -580,7 +615,11 @@ export default function Home() {
                   </div>
                 </div>
                 <div className={styles.range_bar}>
-                  <div className={`${styles.range_value} ${styles.green}`}>
+                  <div
+                    className={`${styles.range_value} ${styles.green}`}
+                    data-aos="range-25"
+                    data-aos-delay="400"
+                  >
                     <div className={styles.dot}></div>
                   </div>
                 </div>
@@ -598,7 +637,11 @@ export default function Home() {
                   </div>
                 </div>
                 <div className={styles.range_bar}>
-                  <div className={`${styles.range_value} ${styles.purple}`}>
+                  <div
+                    className={`${styles.range_value} ${styles.purple}`}
+                    data-aos="range-15"
+                    data-aos-delay="400"
+                  >
                     <div className={styles.dot}></div>
                   </div>
                 </div>
@@ -616,7 +659,11 @@ export default function Home() {
                   </div>
                 </div>
                 <div className={styles.range_bar}>
-                  <div className={`${styles.range_value} ${styles.orange}`}>
+                  <div
+                    className={`${styles.range_value} ${styles.orange}`}
+                    data-aos="range-10"
+                    data-aos-delay="400"
+                  >
                     <div className={styles.dot}></div>
                   </div>
                 </div>
@@ -634,7 +681,11 @@ export default function Home() {
                   </div>
                 </div>
                 <div className={styles.range_bar}>
-                  <div className={`${styles.range_value} ${styles.blue}`}>
+                  <div
+                    className={`${styles.range_value} ${styles.blue}`}
+                    data-aos="range-10"
+                    data-aos-delay="400"
+                  >
                     <div className={styles.dot}></div>
                   </div>
                 </div>
@@ -652,7 +703,11 @@ export default function Home() {
                   </div>
                 </div>
                 <div className={styles.range_bar}>
-                  <div className={`${styles.range_value} ${styles.pink}`}>
+                  <div
+                    className={`${styles.range_value} ${styles.pink}`}
+                    data-aos="range-10"
+                    data-aos-delay="400"
+                  >
                     <div className={styles.dot}></div>
                   </div>
                 </div>
@@ -701,7 +756,7 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-              <div className={styles.card} data-aos="fade-up-right">
+              <div className={styles.card}>
                 <div className={styles.date}>
                   <p>December, 2022</p>
                 </div>
@@ -720,7 +775,7 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-              <div className={styles.card} data-aos="fade-up-left">
+              <div className={styles.card}>
                 <div className={styles.date}>
                   <p>January, 2023</p>
                 </div>
@@ -736,7 +791,7 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-              <div className={styles.card} data-aos="fade-up">
+              <div className={styles.card}>
                 <div className={styles.date}>
                   <p>February, 2023</p>
                 </div>
@@ -767,7 +822,7 @@ export default function Home() {
                   {/* telegram channel */}
                   <Link href={values.channel_link}>
                     <a target="_blank">
-                      <div className={styles.content_footer}>
+                      <div className={styles.content_footer} data-aos="fade-up">
                         <Image
                           src={"/svg/" + values.channel_img + ".svg"}
                           width={36}
@@ -785,7 +840,7 @@ export default function Home() {
                   {/* telegram chat */}
                   <Link href={values.chat_link}>
                     <a target="_blank">
-                      <div className={styles.content_footer}>
+                      <div className={styles.content_footer} data-aos="fade-up">
                         <Image
                           src={"/svg/" + values.chat_img + ".svg"}
                           width={36}
@@ -802,7 +857,7 @@ export default function Home() {
                   </Link>
                   {/* twitter */}
                   <a target="_blank">
-                    <div className={styles.content_footer}>
+                    <div className={styles.content_footer} data-aos="fade-up">
                       <Image
                         src={"/svg/" + values.twitter_icon + ".svg"}
                         width={36}
@@ -820,7 +875,11 @@ export default function Home() {
               ))}
               {/* Buy Ducky Sections */}
               {footerValues.buy_ducky.map((values) => (
-                <div key={values.ps_name} className={styles.footer_titles}>
+                <div
+                  key={values.ps_name}
+                  className={styles.footer_titles}
+                  data-aos="fade-up"
+                >
                   <h4>Buy Ducky</h4>
                   {/* PancakeSwap */}
                   <Link href={values.ps_link}>
@@ -843,7 +902,7 @@ export default function Home() {
                   {/* MEXC */}
                   <Link href={values.mexc_link}>
                     <a target="_blank">
-                      <div className={styles.content_footer}>
+                      <div className={styles.content_footer} data-aos="fade-up">
                         <Image
                           src={"/svg/" + values.mexc_img + ".svg"}
                           width={36}
@@ -862,12 +921,16 @@ export default function Home() {
               ))}
               {/* Markets Sections */}
               {footerValues.markets.map((values) => (
-                <div key={values.gecko_name} className={styles.footer_titles}>
+                <div
+                  key={values.gecko_name}
+                  className={styles.footer_titles}
+                  data-aos="fade-up"
+                >
                   <h4>Markets</h4>
                   {/* Coin Gecko */}
                   <Link href={values.gecko_link}>
                     <a target="_blank">
-                      <div className={styles.content_footer}>
+                      <div className={styles.content_footer} data-aos="fade-up">
                         <Image
                           src={"/svg/" + values.gecko_img + ".svg"}
                           width={36}
@@ -885,7 +948,7 @@ export default function Home() {
                   {/* CoinMarketCap */}
                   <Link href={values.market_link}>
                     <a target="_blank">
-                      <div className={styles.content_footer}>
+                      <div className={styles.content_footer} data-aos="fade-up">
                         <Image
                           src={"/svg/" + values.market_img + ".svg"}
                           width={36}
@@ -903,7 +966,11 @@ export default function Home() {
                 </div>
               ))}
               {footerValues.information.map((values) => (
-                <div key={values.name} className={styles.footer_titles}>
+                <div
+                  key={values.name}
+                  className={styles.footer_titles}
+                  data-aos="fade-up"
+                >
                   <h4>Information</h4>
                   <a target="_blank">
                     <div className={styles.content_footer}>
@@ -919,7 +986,7 @@ export default function Home() {
               ))}
             </>
           ))}
-          <div className={styles.footer_titles}>
+          <div className={styles.footer_titles} data-aos="fade-up">
             <h4>Contact Us</h4>
             <a target="_blank">
               <div className={styles.content_footer}>
