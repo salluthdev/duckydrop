@@ -140,10 +140,10 @@
   }
 }
 .our_product {
-  min-height: 800px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-bottom: 120px;
   h1 {
     max-width: 640px;
     text-align: center;
@@ -258,7 +258,7 @@
       margin-top: 48px;
       .flow {
         width: 180px;
-        min-height: 60px;
+        height: 60px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -411,7 +411,6 @@
           left: 0;
           border-radius: 200px;
           &.yellow {
-            width: 20%;
             background: radial-gradient(
               100% 100% at 50% 0%,
               #fffb9d 14.47%,
@@ -423,7 +422,6 @@
             }
           }
           &.green {
-            width: 25%;
             background: radial-gradient(
               100% 100% at 50% 0%,
               #d4ff9d 14.47%,
@@ -435,7 +433,6 @@
             }
           }
           &.purple {
-            width: 15%;
             background: radial-gradient(
               100% 100% at 50% 0%,
               #ff9def 14.47%,
@@ -447,7 +444,6 @@
             }
           }
           &.orange {
-            width: 10%;
             background: radial-gradient(
               100% 100% at 50% 0%,
               #ffba9d 14.47%,
@@ -459,7 +455,6 @@
             }
           }
           &.blue {
-            width: 10%;
             background: radial-gradient(
               100% 100% at 50% 0%,
               #9dedff 14.47%,
@@ -471,7 +466,6 @@
             }
           }
           &.pink {
-            width: 10%;
             background: radial-gradient(
               100% 100% at 50% 0%,
               #ff9dae 14.47%,
@@ -497,7 +491,6 @@
   }
 }
 .our_roadmap {
-  min-height: 600px;
   padding: 120px 0;
   .section_wrapper {
     display: flex;
