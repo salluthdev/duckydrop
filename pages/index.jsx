@@ -4,7 +4,7 @@ import Link from "next/link";
 import styles from "../styles/Home.module.scss";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
 export default function Home() {
   useEffect(() => {
@@ -12,6 +12,8 @@ export default function Home() {
       duration: 800,
     });
   }, []);
+
+  const { setIsReady } = useState(false);
 
   useEffect(() => {
     document.fonts.load("Poppins-Regular").then(() => setIsReady(true));
