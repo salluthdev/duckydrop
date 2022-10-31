@@ -155,7 +155,9 @@ export default function Home() {
               </p>
             </div>
             <div className={styles.char} data-aos="fade-left">
-              <Image src={"/img/bg-3d.png"} width={440} height={480} />
+              <video width="600" height="600" autoplay="true" muted loop>
+                <source src={"/img/3d-anim.webm"} type="video/webm" />
+              </video>
             </div>
           </div>
         </section>
@@ -334,7 +336,7 @@ export default function Home() {
                   />
                 </div>
                 <div className={styles.content_mid}>
-                  <h2>Ducky HUnter</h2>
+                  <h2>Ducky Hunter</h2>
                   <p>
                     Allows users to bridging with pegged tokens or liquidity
                     pools.
@@ -364,60 +366,80 @@ export default function Home() {
               <div className={styles.flow}>
                 <p>Connect Wallet</p>
               </div>
-              <div data-aos="fade-left" data-aos-delay="200">
-                <Image
+              <div data-aos="fade-up">
+                <img
                   src={"/svg/our-flow-connector.svg"}
                   width={56}
                   height={24}
+                  className={styles.img_connector_desktop}
                 />
               </div>
-              <div
-                className={styles.flow}
-                data-aos="fade-left"
-                data-aos-delay="200"
-              >
+              <div data-aos="fade-up">
+                <img
+                  src={"/svg/our-flow-connector-mobile.svg"}
+                  width={24}
+                  height={56}
+                  className={styles.img_connector_mobile}
+                />
+              </div>
+              <div className={styles.flow} data-aos="fade-up">
                 <p>Choose Network</p>
               </div>
-              <div data-aos="fade-left" data-aos-delay="400">
-                <Image
+              <div data-aos="fade-up">
+                <img
                   src={"/svg/our-flow-connector.svg"}
                   width={56}
                   height={24}
+                  className={styles.img_connector_desktop}
                 />
               </div>
-              <div
-                className={styles.flow}
-                data-aos="fade-left"
-                data-aos-delay="400"
-              >
+              <div data-aos="fade-up">
+                <img
+                  src={"/svg/our-flow-connector-mobile.svg"}
+                  width={24}
+                  height={56}
+                  className={styles.img_connector_mobile}
+                />
+              </div>
+              <div className={styles.flow} data-aos="fade-up">
                 <p>Paste Address</p>
               </div>
-              <div data-aos="fade-left" data-aos-delay="600">
-                <Image
+              <div data-aos="fade-up">
+                <img
                   src={"/svg/our-flow-connector.svg"}
                   width={56}
                   height={24}
+                  className={styles.img_connector_desktop}
                 />
               </div>
-              <div
-                className={styles.flow}
-                data-aos="fade-left"
-                data-aos-delay="600"
-              >
+              <div data-aos="fade-up">
+                <img
+                  src={"/svg/our-flow-connector-mobile.svg"}
+                  width={24}
+                  height={56}
+                  className={styles.img_connector_mobile}
+                />
+              </div>
+              <div className={styles.flow} data-aos="fade-up">
                 <p>Insert Wallet</p>
               </div>
-              <div data-aos="fade-left" data-aos-delay="800">
-                <Image
+              <div data-aos="fade-up">
+                <img
                   src={"/svg/our-flow-connector.svg"}
                   width={56}
                   height={24}
+                  className={styles.img_connector_desktop}
                 />
               </div>
-              <div
-                className={styles.flow}
-                data-aos="fade-left"
-                data-aos-delay="800"
-              >
+              <div data-aos="fade-up">
+                <img
+                  src={"/svg/our-flow-connector-mobile.svg"}
+                  width={24}
+                  height={56}
+                  className={styles.img_connector_mobile}
+                />
+              </div>
+              <div className={styles.flow} data-aos="fade-up">
                 <p>Ducky</p>
               </div>
             </div>
