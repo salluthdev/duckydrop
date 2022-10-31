@@ -112,3 +112,9 @@ button:hover {
     overflow-x: hidden;
   }
 }
+
+@media (max-width: 867px) {
+  .wrapper {
+    padding: 0 24px;
+  }
+}

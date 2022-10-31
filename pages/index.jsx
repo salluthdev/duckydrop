@@ -155,7 +155,9 @@ export default function Home() {
               </p>
             </div>
             <div className={styles.char} data-aos="fade-left">
-              <Image src={"/img/bg-3d.png"} width={440} height={480} />
+              <video width="600" height="600" autoplay="true" loop>
+                <source src={"/img/3d-anim.webm"} type="video/webm" />
+              </video>
             </div>
           </div>
         </section>
@@ -334,7 +336,7 @@ export default function Home() {
                   />
                 </div>
                 <div className={styles.content_mid}>
-                  <h2>Ducky HUnter</h2>
+                  <h2>Ducky Hunter</h2>
                   <p>
                     Allows users to bridging with pegged tokens or liquidity
                     pools.
