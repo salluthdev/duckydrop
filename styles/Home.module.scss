@@ -105,6 +105,36 @@
     }
     .char {
       position: relative;
+      animation-name: duck3d;
+      animation-duration: 8s;
+      animation-fill-mode: forwards;
+      animation-iteration-count: infinite;
+    }
+    @keyframes duck3d {
+      0%,
+      100% {
+        transform: scale(1) rotate(0deg);
+        top: 0;
+        left: 0;
+      }
+      20% {
+        top: 20px;
+        left: 40px;
+      }
+      40% {
+        transform: scale(1.05) rotate(15deg);
+        top: 40px;
+        left: 20px;
+      }
+      60% {
+        top: 20px;
+        left: 40px;
+      }
+      80% {
+        transform: scale(1.02) rotate(-8deg);
+        top: 20px;
+        left: 40px;
+      }
     }
   }
 }
