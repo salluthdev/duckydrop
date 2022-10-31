@@ -155,7 +155,7 @@ export default function Home() {
               </p>
             </div>
             <div className={styles.char} data-aos="fade-left">
-              <video width="600" height="600" autoplay="true" loop>
+              <video width="600" height="600" autoplay="true" muted loop>
                 <source src={"/img/3d-anim.webm"} type="video/webm" />
               </video>
             </div>
