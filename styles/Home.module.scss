@@ -634,6 +634,13 @@
       }
     }
   }
+  .our_partners {
+    .section_wrapper {
+      .logos_wrapper {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+  }
   .tokenomics {
     .range_wrapper {
       flex-direction: column;
