@@ -32,9 +32,6 @@ export default function Home() {
           ps_link: "https://pancakeswap.finance/",
           ps_name: "PancakeSwap",
           ps_img: "icon-pancakeswap",
-          mexc_link: "https://www.mexc.com/",
-          mexc_name: "MEXC",
-          mexc_img: "icon-mexc",
         },
       ],
       markets: [
@@ -50,6 +47,11 @@ export default function Home() {
       information: [
         {
           name: "DuckyDrop Pitch Deck",
+        },
+      ],
+      contact_us: [
+        {
+          name: "Contact Us",
         },
       ],
     },
@@ -155,7 +157,7 @@ export default function Home() {
               </p>
             </div>
             <div className={styles.char} data-aos="fade-down">
-              <video width="680" height="680" autoplay="true" muted loop>
+              <video className={styles.video_duck} autoPlay muted loop>
                 <source src={"/img/3d-anim.webm"} type="video/webm" />
               </video>
             </div>
@@ -448,7 +450,7 @@ export default function Home() {
         <section className={styles.our_partners}>
           <div className={`wrapper ${styles.section_wrapper}`}>
             <h1>
-              Our <span>Partners</span>
+              Supported Network & <span>Partners</span>
             </h1>
             <div className={styles.logos_wrapper}>
               <div className={styles.logo_wrapper}>
@@ -829,58 +831,25 @@ export default function Home() {
         </section>
       </main>
       <footer className={styles.footer}>
-        <div className={`wrapper ${styles.footer_wrapper}`}>
-          {FOOTER_DATA.map((footerValues) => (
-            <>
-              {footerValues.social_section.map((values) => (
-                <div key={values.channel_name} className={styles.footer_titles}>
-                  {/* Social Channels Section */}
-                  <h4>Social Channels</h4>
-                  {/* telegram channel */}
-                  <Link href={values.channel_link}>
-                    <a target="_blank">
-                      <div className={styles.content_footer} data-aos="fade-up">
-                        <Image
-                          src={"/svg/" + values.channel_img + ".svg"}
-                          width={36}
-                          height={36}
-                        />
-                        <p>{values.channel_name}</p>
-                        <Image
-                          src={"/svg/icon-target-link.svg"}
-                          width={16}
-                          height={16}
-                        />
-                      </div>
-                    </a>
-                  </Link>
-                  {/* telegram chat */}
-                  <Link href={values.chat_link}>
-                    <a target="_blank">
-                      <div className={styles.content_footer} data-aos="fade-up">
-                        <Image
-                          src={"/svg/" + values.chat_img + ".svg"}
-                          width={36}
-                          height={36}
-                        />
-                        <p>{values.chat_name}</p>
-                        <Image
-                          src={"/svg/icon-target-link.svg"}
-                          width={16}
-                          height={16}
-                        />
-                      </div>
-                    </a>
-                  </Link>
-                  {/* twitter */}
+        {FOOTER_DATA.map((footerValues) => (
+          <div
+            key={footerValues}
+            className={`wrapper ${styles.footer_wrapper}`}
+          >
+            {footerValues.social_section.map((values) => (
+              <div key={values.channel_name} className={styles.footer_titles}>
+                {/* Social Channels Section */}
+                <h4>Social Channels</h4>
+                {/* telegram channel */}
+                <Link href={values.channel_link}>
                   <a target="_blank">
                     <div className={styles.content_footer} data-aos="fade-up">
                       <Image
-                        src={"/svg/" + values.twitter_icon + ".svg"}
+                        src={"/svg/" + values.channel_img + ".svg"}
                         width={36}
                         height={36}
                       />
-                      <p>{values.twitter}</p>
+                      <p>{values.channel_name}</p>
                       <Image
                         src={"/svg/icon-target-link.svg"}
                         width={16}
@@ -888,110 +857,107 @@ export default function Home() {
                       />
                     </div>
                   </a>
-                </div>
-              ))}
-              {/* Buy Ducky Sections */}
-              {footerValues.buy_ducky.map((values) => (
-                <div
-                  key={values.ps_name}
-                  className={styles.footer_titles}
-                  data-aos="fade-up"
-                >
-                  <h4>Buy Ducky</h4>
-                  {/* PancakeSwap */}
-                  <Link href={values.ps_link}>
-                    <a target="_blank">
-                      <div className={styles.content_footer}>
-                        <Image
-                          src={"/svg/" + values.ps_img + ".svg"}
-                          width={36}
-                          height={36}
-                        />
-                        <p>{values.ps_name}</p>
-                        <Image
-                          src={"/svg/icon-target-link.svg"}
-                          width={16}
-                          height={16}
-                        />
-                      </div>
-                    </a>
-                  </Link>
-                  {/* MEXC */}
-                  <Link href={values.mexc_link}>
-                    <a target="_blank">
-                      <div className={styles.content_footer} data-aos="fade-up">
-                        <Image
-                          src={"/svg/" + values.mexc_img + ".svg"}
-                          width={36}
-                          height={36}
-                        />
-                        <p>{values.mexc_name}</p>
-                        <Image
-                          src={"/svg/icon-target-link.svg"}
-                          width={16}
-                          height={16}
-                        />
-                      </div>
-                    </a>
-                  </Link>
-                </div>
-              ))}
-              {/* Markets Sections */}
-              {footerValues.markets.map((values) => (
-                <div
-                  key={values.gecko_name}
-                  className={styles.footer_titles}
-                  data-aos="fade-up"
-                >
-                  <h4>Markets</h4>
-                  {/* Coin Gecko */}
-                  <Link href={values.gecko_link}>
-                    <a target="_blank">
-                      <div className={styles.content_footer} data-aos="fade-up">
-                        <Image
-                          src={"/svg/" + values.gecko_img + ".svg"}
-                          width={36}
-                          height={36}
-                        />
-                        <p>{values.gecko_name}</p>
-                        <Image
-                          src={"/svg/icon-target-link.svg"}
-                          width={16}
-                          height={16}
-                        />
-                      </div>
-                    </a>
-                  </Link>
-                  {/* CoinMarketCap */}
-                  <Link href={values.market_link}>
-                    <a target="_blank">
-                      <div className={styles.content_footer} data-aos="fade-up">
-                        <Image
-                          src={"/svg/" + values.market_img + ".svg"}
-                          width={36}
-                          height={36}
-                        />
-                        <p>{values.market_name}</p>
-                        <Image
-                          src={"/svg/icon-target-link.svg"}
-                          width={16}
-                          height={16}
-                        />
-                      </div>
-                    </a>
-                  </Link>
-                </div>
-              ))}
-              {footerValues.information.map((values) => (
-                <div
-                  key={values.name}
-                  className={styles.footer_titles}
-                  data-aos="fade-up"
-                >
-                  <h4>Information</h4>
+                </Link>
+                {/* telegram chat */}
+                <Link href={values.chat_link}>
+                  <a target="_blank">
+                    <div className={styles.content_footer} data-aos="fade-up">
+                      <Image
+                        src={"/svg/" + values.chat_img + ".svg"}
+                        width={36}
+                        height={36}
+                      />
+                      <p>{values.chat_name}</p>
+                      <Image
+                        src={"/svg/icon-target-link.svg"}
+                        width={16}
+                        height={16}
+                      />
+                    </div>
+                  </a>
+                </Link>
+                {/* twitter */}
+                <a target="_blank">
+                  <div className={styles.content_footer} data-aos="fade-up">
+                    <Image
+                      src={"/svg/" + values.twitter_icon + ".svg"}
+                      width={36}
+                      height={36}
+                    />
+                    <p>{values.twitter}</p>
+                    <Image
+                      src={"/svg/icon-target-link.svg"}
+                      width={16}
+                      height={16}
+                    />
+                  </div>
+                </a>
+              </div>
+            ))}
+            {/* Markets Sections */}
+            {footerValues.markets.map((values) => (
+              <div
+                key={values.gecko_name}
+                className={styles.footer_titles}
+                data-aos="fade-up"
+              >
+                <h4>Markets</h4>
+                {/* Coin Gecko */}
+                <Link href={values.gecko_link}>
+                  <a target="_blank">
+                    <div className={styles.content_footer} data-aos="fade-up">
+                      <Image
+                        src={"/svg/" + values.gecko_img + ".svg"}
+                        width={36}
+                        height={36}
+                      />
+                      <p>{values.gecko_name}</p>
+                      <Image
+                        src={"/svg/icon-target-link.svg"}
+                        width={16}
+                        height={16}
+                      />
+                    </div>
+                  </a>
+                </Link>
+                {/* CoinMarketCap */}
+                <Link href={values.market_link}>
+                  <a target="_blank">
+                    <div className={styles.content_footer} data-aos="fade-up">
+                      <Image
+                        src={"/svg/" + values.market_img + ".svg"}
+                        width={36}
+                        height={36}
+                      />
+                      <p>{values.market_name}</p>
+                      <Image
+                        src={"/svg/icon-target-link.svg"}
+                        width={16}
+                        height={16}
+                      />
+                    </div>
+                  </a>
+                </Link>
+              </div>
+            ))}
+            {/* Buy Ducky Sections */}
+            {footerValues.buy_ducky.map((values) => (
+              <div
+                key={values.ps_name}
+                className={styles.footer_titles}
+                data-aos="fade-up"
+              >
+                <h4>Buy Ducky</h4>
+                {/* PancakeSwap */}
+                <Link href={values.ps_link}>
                   <a target="_blank">
                     <div className={styles.content_footer}>
-                      <p>{values.name}</p>
+                      <Image
+                        src={"/svg/" + values.ps_img + ".svg"}
+                        width={36}
+                        height={36}
+                      />
+                      <p>{values.ps_name}</p>
                       <Image
                         src={"/svg/icon-target-link.svg"}
                         width={16}
@@ -999,24 +965,49 @@ export default function Home() {
                       />
                     </div>
                   </a>
-                </div>
-              ))}
-            </>
-          ))}
-          <div className={styles.footer_titles} data-aos="fade-up">
-            <h4>Contact Us</h4>
-            <a target="_blank">
-              <div className={styles.content_footer}>
-                <p>Contact Us</p>
-                <Image
-                  src={"/svg/icon-target-link.svg"}
-                  width={16}
-                  height={16}
-                />
+                </Link>
               </div>
-            </a>
+            ))}
+            {footerValues.information.map((values) => (
+              <div
+                key={values.name}
+                className={styles.footer_titles}
+                data-aos="fade-up"
+              >
+                <h4>Information</h4>
+                <a target="_blank">
+                  <div className={styles.content_footer}>
+                    <p>{values.name}</p>
+                    <Image
+                      src={"/svg/icon-target-link.svg"}
+                      width={16}
+                      height={16}
+                    />
+                  </div>
+                </a>
+              </div>
+            ))}
+            {footerValues.contact_us.map((values) => (
+              <div
+                key={values.name}
+                className={styles.footer_titles}
+                data-aos="fade-up"
+              >
+                <h4>Contact Us</h4>
+                <a target="_blank">
+                  <div className={styles.content_footer}>
+                    <p>{values.name}</p>
+                    <Image
+                      src={"/svg/icon-target-link.svg"}
+                      width={16}
+                      height={16}
+                    />
+                  </div>
+                </a>
+              </div>
+            ))}
           </div>
-        </div>
+        ))}
       </footer>
       <section className={styles.copyright}>
         <div className={`wrapper ${styles.copyright_wrapper}`}>
