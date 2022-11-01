@@ -105,37 +105,11 @@
     }
     .char {
       position: relative;
-      // animation-name: duck3d;
-      // animation-duration: 8s;
-      // animation-fill-mode: forwards;
-      // animation-iteration-count: infinite;
+      .video_duck {
+        width: 680px;
+        height: 680px;
+      }
     }
-    // @keyframes duck3d {
-    //   0%,
-    //   100% {
-    //     transform: scale(1) rotate(0deg);
-    //     top: 0;
-    //     left: 0;
-    //   }
-    //   20% {
-    //     top: 20px;
-    //     left: 40px;
-    //   }
-    //   40% {
-    //     transform: scale(1.05) rotate(15deg);
-    //     top: 40px;
-    //     left: 20px;
-    //   }
-    //   60% {
-    //     top: 20px;
-    //     left: 40px;
-    //   }
-    //   80% {
-    //     transform: scale(1.02) rotate(-8deg);
-    //     top: 20px;
-    //     left: 40px;
-    //   }
-    // }
   }
 }
 .subtitle_decoration {
@@ -320,6 +294,10 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    h1 {
+      max-width: 800px;
+      text-align: center;
+    }
     .logos_wrapper {
       width: 100%;
       display: grid;
@@ -641,9 +619,15 @@
 @media (max-width: 1240px) {
   .ducky_go_go {
     .section_wrapper {
-      flex-direction: column;
+      flex-direction: column-reverse;
       align-items: center;
-      gap: 60px;
+      gap: unset;
+      .char {
+        .video_duck {
+          width: 500px;
+          height: 500px;
+        }
+      }
     }
   }
   .our_product {
@@ -685,4 +669,25 @@
 }
 
 @media (max-width: 867px) {
+  .navbar {
+    .nav_wrapper {
+      .nav_content_wrapper {
+        nav {
+          display: none;
+        }
+      }
+    }
+  }
+  .our_product {
+    .product_card_wrapper {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+  .our_partners {
+    .section_wrapper {
+      .logos_wrapper {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+  }
 }
