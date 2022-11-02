@@ -122,13 +122,26 @@ button:hover {
   }
 }
 
-// @media only screen and (-webkit-min-device-pixel-ratio: 1.5),
-//   only screen and (-o-min-device-pixel-ratio: 3/2),
-//   only screen and (min--moz-device-pixel-ratio: 1.5),
-//   only screen and (min-device-pixel-ratio: 1.5) {
-//   html,
-//   body {
-//     width: 100%;
-//     overflow-x: hidden;
-//   }
-// }
+@media (max-width: 720px) {
+  .wrapper {
+    padding: 0 16px;
+  }
+  h1 {
+    font-size: 24px;
+  }
+  button,
+  p {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+  only screen and (-o-min-device-pixel-ratio: 3/2),
+  only screen and (min--moz-device-pixel-ratio: 1.5),
+  only screen and (min-device-pixel-ratio: 1.5) {
+  html,
+  body {
+    width: 100%;
+    overflow-x: hidden;
+  }
+}

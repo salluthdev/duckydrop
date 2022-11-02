@@ -15,6 +15,59 @@ export default function Home() {
     });
   }, []);
 
+  const FOOTER_DATA_V2 = [
+    {
+      title: "Social Channels",
+      items: [
+        {
+          icon: "",
+          name: "Telegram Channel",
+          url: "",
+        },
+        {
+          icon: "",
+          name: "Telegram",
+          url: "",
+        },
+        {
+          icon: "",
+          name: "Telegram",
+          url: "",
+        },
+      ],
+    },
+    {
+      title: "Markets",
+      items: [
+        {
+          icon: "",
+          name: "",
+          url: "",
+        },
+      ],
+    },
+    {
+      title: "Social Channels",
+      items: [
+        {
+          icon: "",
+          name: "",
+          url: "",
+        },
+      ],
+    },
+    {
+      title: "Social Channels",
+      items: [
+        {
+          icon: "",
+          name: "",
+          url: "",
+        },
+      ],
+    },
+  ];
+
   const FOOTER_DATA = [
     {
       social_section: [
@@ -73,14 +126,11 @@ export default function Home() {
       <header className={styles.navbar}>
         <div className={`wrapper ${styles.nav_wrapper}`}>
           <Link href="/">
-            <a>
-              <Image
-                src={"/svg/logo.svg"}
-                width={206}
-                height={40}
-                alt="Logo Ducky Drop"
-              />
-            </a>
+            <img
+              src={"/svg/logo.svg"}
+              alt="Logo Ducky Drop"
+              className={styles.logo}
+            />
           </Link>
           <div className={styles.nav_content_wrapper}>
             <nav>
@@ -144,9 +194,13 @@ export default function Home() {
           <div className={`wrapper ${styles.section_wrapper}`}>
             <div className={styles.content} data-aos="fade-right">
               <div className={styles.subtitle_decoration}>
-                <Image src={"/svg/icon-x-yellow.svg"} width={20} height={20} />
+                <div className={styles.icon_x_wrapper}>
+                  <Image src={"/svg/icon-x-yellow.svg"} layout={"fill"} />
+                </div>
                 <p>Connect Your Wallet</p>
-                <Image src={"/svg/icon-x-yellow.svg"} width={20} height={20} />
+                <div className={styles.icon_x_wrapper}>
+                  <Image src={"/svg/icon-x-yellow.svg"} layout={"fill"} />
+                </div>
               </div>
               <h1>
                 Ducky <span>Ducky</span> Go Go
@@ -168,9 +222,13 @@ export default function Home() {
         <section className={styles.do_airdrop_get_ducky}>
           <div className={`wrapper ${styles.section_wrapper}`}>
             <div className={styles.subtitle_decoration}>
-              <Image src={"/svg/icon-x-yellow.svg"} width={20} height={20} />
+              <div className={styles.icon_x_wrapper}>
+                <Image src={"/svg/icon-x-yellow.svg"} layout={"fill"} />
+              </div>
               <p>Use the Ducky Drop Platform</p>
-              <Image src={"/svg/icon-x-yellow.svg"} width={20} height={20} />
+              <div className={styles.icon_x_wrapper}>
+                <Image src={"/svg/icon-x-yellow.svg"} layout={"fill"} />
+              </div>
             </div>
             <h1>
               Do Airdrop and Get <span>$Ducky</span>
@@ -194,9 +252,13 @@ export default function Home() {
         <section className={styles.our_product}>
           <div className={`wrapper ${styles.section_wrapper}`}>
             <div className={styles.subtitle_decoration}>
-              <Image src={"/svg/icon-x-yellow.svg"} width={20} height={20} />
+              <div className={styles.icon_x_wrapper}>
+                <Image src={"/svg/icon-x-yellow.svg"} layout={"fill"} />
+              </div>
               <p>This is Our Product</p>
-              <Image src={"/svg/icon-x-yellow.svg"} width={20} height={20} />
+              <div className={styles.icon_x_wrapper}>
+                <Image src={"/svg/icon-x-yellow.svg"} layout={"fill"} />
+              </div>
             </div>
             <h1>
               Get the best <span>product</span> from us
@@ -585,9 +647,13 @@ export default function Home() {
         <section className={styles.tokenomics}>
           <div className={`wrapper ${styles.section_wrapper}`}>
             <div className={styles.subtitle_decoration}>
-              <Image src={"/svg/icon-x-yellow.svg"} width={20} height={20} />
+              <div className={styles.icon_x_wrapper}>
+                <Image src={"/svg/icon-x-yellow.svg"} layout={"fill"} />
+              </div>
               <p>Our Token Management</p>
-              <Image src={"/svg/icon-x-yellow.svg"} width={20} height={20} />
+              <div className={styles.icon_x_wrapper}>
+                <Image src={"/svg/icon-x-yellow.svg"} layout={"fill"} />
+              </div>
             </div>
             <h1>Tokenomics</h1>
             <p>
@@ -852,7 +918,7 @@ export default function Home() {
           </div>
         </section>
       </main>
-      <ToastContainer position="top-right" limit={1} />
+      <ToastContainer autoClose={1400} />
       <footer className={styles.footer}>
         {FOOTER_DATA.map((footerValues) => (
           <div
@@ -976,13 +1042,7 @@ export default function Home() {
               <div key={values.ps_name} className={styles.footer_titles}>
                 <h4>Buy Ducky</h4>
                 {/* PancakeSwap */}
-                <div
-                  onClick={() =>
-                    toast.info("Coming Soon", {
-                      position: "top-right",
-                    })
-                  }
-                >
+                <div onClick={() => toast.info("Coming Soon")}>
                   <a>
                     <div className={styles.content_footer}>
                       <Image
