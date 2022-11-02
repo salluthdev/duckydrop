@@ -212,7 +212,12 @@ export default function Home() {
                 any drama needed.
               </p>
             </div>
-            <div className={styles.char} data-aos="fade-down">
+            <div
+              className={styles.char}
+              data-aos="ducky_anim"
+              data-aos-delay="200"
+              data-aos-duration={3000}
+            >
               <video className={styles.video_duck} autoPlay muted loop>
                 <source src={"/img/3d-anim.webm"} type="video/webm" />
               </video>
