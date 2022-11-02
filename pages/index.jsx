@@ -4,7 +4,9 @@ import styles from "../styles/Home.module.scss";
 import Link from "next/link";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 export default function Home() {
   useEffect(() => {
@@ -164,193 +166,197 @@ export default function Home() {
           </div>
         </section>
         <section className={styles.do_airdrop_get_ducky}>
-          <div className={styles.subtitle_decoration}>
-            <Image src={"/svg/icon-x-yellow.svg"} width={20} height={20} />
-            <p>Use the Ducky Drop Platform</p>
-            <Image src={"/svg/icon-x-yellow.svg"} width={20} height={20} />
-          </div>
-          <h1>
-            Do Airdrop and Get <span>$Ducky</span>
-          </h1>
-          <p>
-            It’s like a give-and-take. We are a community-based project, so the
-            more often you do mass dropping the more you gain the benefits from
-            the community. You will get $DUCKY tokens by loyally using the Ducky
-            Drop platform as one of the marketing campaign tools for their
-            project.
-          </p>
-          <div className={styles.card_vector_wrapper} data-aos="flip-right">
-            <Image
-              src={"/svg/card-get-ducky.svg"}
-              layout="fill"
-              objectFit="contain"
-            />
+          <div className={`wrapper ${styles.section_wrapper}`}>
+            <div className={styles.subtitle_decoration}>
+              <Image src={"/svg/icon-x-yellow.svg"} width={20} height={20} />
+              <p>Use the Ducky Drop Platform</p>
+              <Image src={"/svg/icon-x-yellow.svg"} width={20} height={20} />
+            </div>
+            <h1>
+              Do Airdrop and Get <span>$Ducky</span>
+            </h1>
+            <p>
+              It’s like a give-and-take. We are a community-based project, so
+              the more often you do mass dropping the more you gain the benefits
+              from the community. You will get $DUCKY tokens by loyally using
+              the Ducky Drop platform as one of the marketing campaign tools for
+              their project.
+            </p>
+            <div className={styles.card_vector_wrapper} data-aos="flip-right">
+              <Image
+                src={"/svg/card-get-ducky.svg"}
+                layout="fill"
+                objectFit="contain"
+              />
+            </div>
           </div>
         </section>
         <section className={styles.our_product}>
-          <div className={styles.subtitle_decoration}>
-            <Image src={"/svg/icon-x-yellow.svg"} width={20} height={20} />
-            <p>This is Our Product</p>
-            <Image src={"/svg/icon-x-yellow.svg"} width={20} height={20} />
-          </div>
-          <h1>
-            Get the best <span>product</span> from us
-          </h1>
-          <p>
-            We have provided 4 of the best products that are ready for you to
-            use on our platform.
-          </p>
-          <div className={styles.product_card_wrapper}>
-            <div className={styles.product_card} data-aos="flip-left">
-              <div className={styles.content_wrapper}>
-                <div className={styles.content_top}>
-                  <Image
-                    src={"/svg/card-product-top-left-yellow.svg"}
-                    width={32}
-                    height={32}
-                  />
-                  <Image
-                    src={"/svg/card-product-top-mid.svg"}
-                    width={94}
-                    height={23}
-                  />
-                  <Image
-                    src={"/svg/card-product-top-right.svg"}
-                    width={23}
-                    height={23}
-                  />
-                </div>
-                <div className={styles.content_mid}>
-                  <h2>Multi-Chain DApp</h2>
-                  <p>
-                    Allows users to bridging with pegged tokens or liquidity
-                    pools.
-                  </p>
-                </div>
-              </div>
-              <div className={styles.icon_wrapper}>
-                <Image
-                  src={"/svg/card-product-icon-yellow.svg"}
-                  width={40}
-                  height={40}
-                />
-              </div>
+          <div className={`wrapper ${styles.section_wrapper}`}>
+            <div className={styles.subtitle_decoration}>
+              <Image src={"/svg/icon-x-yellow.svg"} width={20} height={20} />
+              <p>This is Our Product</p>
+              <Image src={"/svg/icon-x-yellow.svg"} width={20} height={20} />
             </div>
-            <div
-              className={`${styles.product_card} ${styles.green}`}
-              data-aos="flip-left"
-              data-aos-delay="400"
-            >
-              <div className={styles.content_wrapper}>
-                <div className={styles.content_top}>
-                  <Image
-                    src={"/svg/card-product-top-left-green.svg"}
-                    width={32}
-                    height={32}
-                  />
-                  <Image
-                    src={"/svg/card-product-top-mid.svg"}
-                    width={94}
-                    height={23}
-                  />
-                  <Image
-                    src={"/svg/card-product-top-right.svg"}
-                    width={23}
-                    height={23}
-                  />
+            <h1>
+              Get the best <span>product</span> from us
+            </h1>
+            <p>
+              We have provided 4 of the best products that are ready for you to
+              use on our platform.
+            </p>
+            <div className={styles.product_card_wrapper}>
+              <div className={styles.product_card} data-aos="flip-left">
+                <div className={styles.content_wrapper}>
+                  <div className={styles.content_top}>
+                    <Image
+                      src={"/svg/card-product-top-left-yellow.svg"}
+                      width={32}
+                      height={32}
+                    />
+                    <Image
+                      src={"/svg/card-product-top-mid.svg"}
+                      width={94}
+                      height={23}
+                    />
+                    <Image
+                      src={"/svg/card-product-top-right.svg"}
+                      width={23}
+                      height={23}
+                    />
+                  </div>
+                  <div className={styles.content_mid}>
+                    <h2>Multi-Chain DApp</h2>
+                    <p>
+                      Allows users to bridging with pegged tokens or liquidity
+                      pools.
+                    </p>
+                  </div>
                 </div>
-                <div className={styles.content_mid}>
-                  <h2>Reusable Airdrop</h2>
-                  <p>
-                    Allows users to bridging with pegged tokens or liquidity
-                    pools.
-                  </p>
-                </div>
-              </div>
-              <div className={styles.icon_wrapper}>
-                <Image
-                  src={"/svg/card-product-icon-green.svg"}
-                  width={40}
-                  height={40}
-                />
-              </div>
-            </div>
-            <div
-              className={`${styles.product_card} ${styles.blue}`}
-              data-aos="flip-left"
-              data-aos-delay="800"
-            >
-              <div className={styles.content_wrapper}>
-                <div className={styles.content_top}>
+                <div className={styles.icon_wrapper}>
                   <Image
-                    src={"/svg/card-product-top-left-blue.svg"}
-                    width={32}
-                    height={32}
+                    src={"/svg/card-product-icon-yellow.svg"}
+                    width={40}
+                    height={40}
                   />
-                  <Image
-                    src={"/svg/card-product-top-mid.svg"}
-                    width={94}
-                    height={23}
-                  />
-                  <Image
-                    src={"/svg/card-product-top-right.svg"}
-                    width={23}
-                    height={23}
-                  />
-                </div>
-                <div className={styles.content_mid}>
-                  <h2>Instant Airdrop</h2>
-                  <p>
-                    Allows users to bridging with pegged tokens or liquidity
-                    pools.
-                  </p>
                 </div>
               </div>
-              <div className={styles.icon_wrapper}>
-                <Image
-                  src={"/svg/card-product-icon-blue.svg"}
-                  width={40}
-                  height={40}
-                />
-              </div>
-            </div>
-            <div
-              className={`${styles.product_card} ${styles.purple}`}
-              data-aos="flip-left"
-              data-aos-delay="1200"
-            >
-              <div className={styles.content_wrapper}>
-                <div className={styles.content_top}>
+              <div
+                className={`${styles.product_card} ${styles.green}`}
+                data-aos="flip-left"
+                data-aos-delay="400"
+              >
+                <div className={styles.content_wrapper}>
+                  <div className={styles.content_top}>
+                    <Image
+                      src={"/svg/card-product-top-left-green.svg"}
+                      width={32}
+                      height={32}
+                    />
+                    <Image
+                      src={"/svg/card-product-top-mid.svg"}
+                      width={94}
+                      height={23}
+                    />
+                    <Image
+                      src={"/svg/card-product-top-right.svg"}
+                      width={23}
+                      height={23}
+                    />
+                  </div>
+                  <div className={styles.content_mid}>
+                    <h2>Reusable Airdrop</h2>
+                    <p>
+                      Allows users to bridging with pegged tokens or liquidity
+                      pools.
+                    </p>
+                  </div>
+                </div>
+                <div className={styles.icon_wrapper}>
                   <Image
-                    src={"/svg/card-product-top-left-purple.svg"}
-                    width={32}
-                    height={32}
-                  />
-                  <Image
-                    src={"/svg/card-product-top-mid.svg"}
-                    width={94}
-                    height={23}
-                  />
-                  <Image
-                    src={"/svg/card-product-top-right.svg"}
-                    width={23}
-                    height={23}
+                    src={"/svg/card-product-icon-green.svg"}
+                    width={40}
+                    height={40}
                   />
                 </div>
-                <div className={styles.content_mid}>
-                  <h2>Ducky Hunter</h2>
-                  <p>
-                    Allows users to bridging with pegged tokens or liquidity
-                    pools.
-                  </p>
+              </div>
+              <div
+                className={`${styles.product_card} ${styles.blue}`}
+                data-aos="flip-left"
+                data-aos-delay="800"
+              >
+                <div className={styles.content_wrapper}>
+                  <div className={styles.content_top}>
+                    <Image
+                      src={"/svg/card-product-top-left-blue.svg"}
+                      width={32}
+                      height={32}
+                    />
+                    <Image
+                      src={"/svg/card-product-top-mid.svg"}
+                      width={94}
+                      height={23}
+                    />
+                    <Image
+                      src={"/svg/card-product-top-right.svg"}
+                      width={23}
+                      height={23}
+                    />
+                  </div>
+                  <div className={styles.content_mid}>
+                    <h2>Instant Airdrop</h2>
+                    <p>
+                      Allows users to bridging with pegged tokens or liquidity
+                      pools.
+                    </p>
+                  </div>
+                </div>
+                <div className={styles.icon_wrapper}>
+                  <Image
+                    src={"/svg/card-product-icon-blue.svg"}
+                    width={40}
+                    height={40}
+                  />
                 </div>
               </div>
-              <div className={styles.icon_wrapper}>
-                <Image
-                  src={"/svg/card-product-icon-purple.svg"}
-                  width={40}
-                  height={40}
-                />
+              <div
+                className={`${styles.product_card} ${styles.purple}`}
+                data-aos="flip-left"
+                data-aos-delay="1200"
+              >
+                <div className={styles.content_wrapper}>
+                  <div className={styles.content_top}>
+                    <Image
+                      src={"/svg/card-product-top-left-purple.svg"}
+                      width={32}
+                      height={32}
+                    />
+                    <Image
+                      src={"/svg/card-product-top-mid.svg"}
+                      width={94}
+                      height={23}
+                    />
+                    <Image
+                      src={"/svg/card-product-top-right.svg"}
+                      width={23}
+                      height={23}
+                    />
+                  </div>
+                  <div className={styles.content_mid}>
+                    <h2>Ducky Hunter</h2>
+                    <p>
+                      Allows users to bridging with pegged tokens or liquidity
+                      pools.
+                    </p>
+                  </div>
+                </div>
+                <div className={styles.icon_wrapper}>
+                  <Image
+                    src={"/svg/card-product-icon-purple.svg"}
+                    width={40}
+                    height={40}
+                  />
+                </div>
               </div>
             </div>
           </div>
@@ -368,7 +374,7 @@ export default function Home() {
               <div className={styles.flow}>
                 <p>Connect Wallet</p>
               </div>
-              <div data-aos="fade-up">
+              <div data-aos="fade-left" data-aos-delay="200">
                 <img
                   src={"/svg/our-flow-connector.svg"}
                   width={56}
@@ -384,10 +390,14 @@ export default function Home() {
                   className={styles.img_connector_mobile}
                 />
               </div>
-              <div className={styles.flow} data-aos="fade-up">
+              <div
+                className={styles.flow}
+                data-aos="fade-left"
+                data-aos-delay="400"
+              >
                 <p>Choose Network</p>
               </div>
-              <div data-aos="fade-up">
+              <div data-aos="fade-left" data-aos-delay="600">
                 <img
                   src={"/svg/our-flow-connector.svg"}
                   width={56}
@@ -403,10 +413,14 @@ export default function Home() {
                   className={styles.img_connector_mobile}
                 />
               </div>
-              <div className={styles.flow} data-aos="fade-up">
+              <div
+                className={styles.flow}
+                data-aos="fade-left"
+                data-aos-delay="800"
+              >
                 <p>Paste Address</p>
               </div>
-              <div data-aos="fade-up">
+              <div data-aos="fade-left" data-aos-delay="1000">
                 <img
                   src={"/svg/our-flow-connector.svg"}
                   width={56}
@@ -422,10 +436,14 @@ export default function Home() {
                   className={styles.img_connector_mobile}
                 />
               </div>
-              <div className={styles.flow} data-aos="fade-up">
+              <div
+                className={styles.flow}
+                data-aos="fade-left"
+                data-aos-delay="1200"
+              >
                 <p>Insert Wallet</p>
               </div>
-              <div data-aos="fade-up">
+              <div data-aos="fade-left" data-aos-delay="1400">
                 <img
                   src={"/svg/our-flow-connector.svg"}
                   width={56}
@@ -441,7 +459,11 @@ export default function Home() {
                   className={styles.img_connector_mobile}
                 />
               </div>
-              <div className={styles.flow} data-aos="fade-up">
+              <div
+                className={styles.flow}
+                data-aos="fade-left"
+                data-aos-delay="1600"
+              >
                 <p>Ducky</p>
               </div>
             </div>
@@ -624,8 +646,8 @@ export default function Home() {
               <div className={styles.range}>
                 <div className={styles.content_top}>
                   <div className={styles.left}>
-                    <p className={styles.title}>Private Sale</p>
-                    <p>15% TGE, then 17% monthly</p>
+                    <p className={styles.title}>Rewards</p>
+                    <p>3 Months cliff, then 10% monthly</p>
                   </div>
                   <div className={styles.allocation}>
                     <p>
@@ -646,8 +668,8 @@ export default function Home() {
               <div className={styles.range}>
                 <div className={styles.content_top}>
                   <div className={styles.left}>
-                    <p className={styles.title}>Rewards</p>
-                    <p>3 Months cliff, then 10% monthly</p>
+                    <p className={styles.title}>Public Sale</p>
+                    <p>30% TGE, then 35% monthly</p>
                   </div>
                   <div className={styles.allocation}>
                     <p>
@@ -668,19 +690,19 @@ export default function Home() {
               <div className={styles.range}>
                 <div className={styles.content_top}>
                   <div className={styles.left}>
-                    <p className={styles.title}>Public Sale</p>
-                    <p>30% TGE, then 35% monthly</p>
+                    <p className={styles.title}>Team</p>
+                    <p>6 Months cliff, then 10% monthly</p>
                   </div>
                   <div className={styles.allocation}>
                     <p>
-                      Allocations: <span>10%</span>
+                      Allocations: <span>17%</span>
                     </p>
                   </div>
                 </div>
                 <div className={styles.range_bar}>
                   <div
                     className={`${styles.range_value} ${styles.orange}`}
-                    data-aos="range-10"
+                    data-aos="range-17"
                     data-aos-delay="400"
                   >
                     <div className={styles.dot}></div>
@@ -690,8 +712,8 @@ export default function Home() {
               <div className={styles.range}>
                 <div className={styles.content_top}>
                   <div className={styles.left}>
-                    <p className={styles.title}>Team</p>
-                    <p>6 Months cliff, then 10% monthly</p>
+                    <p className={styles.title}>Liquidity</p>
+                    <p>100% when launched</p>
                   </div>
                   <div className={styles.allocation}>
                     <p>
@@ -712,19 +734,19 @@ export default function Home() {
               <div className={styles.range}>
                 <div className={styles.content_top}>
                   <div className={styles.left}>
-                    <p className={styles.title}>Private Sale</p>
-                    <p>15% TGE, then 17% monthly</p>
+                    <p className={styles.title}>Reserve</p>
+                    <p>12 Months cliff, then 20% monthly</p>
                   </div>
                   <div className={styles.allocation}>
                     <p>
-                      Allocations: <span>10%</span>
+                      Allocations: <span>13%</span>
                     </p>
                   </div>
                 </div>
                 <div className={styles.range_bar}>
                   <div
                     className={`${styles.range_value} ${styles.pink}`}
-                    data-aos="range-10"
+                    data-aos="range-13"
                     data-aos-delay="400"
                   >
                     <div className={styles.dot}></div>
@@ -830,6 +852,7 @@ export default function Home() {
           </div>
         </section>
       </main>
+      <ToastContainer position="top-right" limit={1} />
       <footer className={styles.footer}>
         {FOOTER_DATA.map((footerValues) => (
           <div
@@ -843,7 +866,7 @@ export default function Home() {
                 {/* telegram channel */}
                 <Link href={values.channel_link}>
                   <a target="_blank">
-                    <div className={styles.content_footer} data-aos="fade-up">
+                    <div className={styles.content_footer}>
                       <Image
                         src={"/svg/" + values.channel_img + ".svg"}
                         width={36}
@@ -861,7 +884,7 @@ export default function Home() {
                 {/* telegram chat */}
                 <Link href={values.chat_link}>
                   <a target="_blank">
-                    <div className={styles.content_footer} data-aos="fade-up">
+                    <div className={styles.content_footer}>
                       <Image
                         src={"/svg/" + values.chat_img + ".svg"}
                         width={36}
@@ -878,7 +901,7 @@ export default function Home() {
                 </Link>
                 {/* twitter */}
                 <a target="_blank">
-                  <div className={styles.content_footer} data-aos="fade-up">
+                  <div className={styles.content_footer}>
                     <Image
                       src={"/svg/" + values.twitter_icon + ".svg"}
                       width={36}
@@ -896,16 +919,18 @@ export default function Home() {
             ))}
             {/* Markets Sections */}
             {footerValues.markets.map((values) => (
-              <div
-                key={values.gecko_name}
-                className={styles.footer_titles}
-                data-aos="fade-up"
-              >
+              <div key={values.gecko_name} className={styles.footer_titles}>
                 <h4>Markets</h4>
                 {/* Coin Gecko */}
-                <Link href={values.gecko_link}>
+                <div
+                  onClick={() =>
+                    toast.info("Coming Soon", {
+                      position: "top-right",
+                    })
+                  }
+                >
                   <a target="_blank">
-                    <div className={styles.content_footer} data-aos="fade-up">
+                    <div className={styles.content_footer}>
                       <Image
                         src={"/svg/" + values.gecko_img + ".svg"}
                         width={36}
@@ -919,11 +944,17 @@ export default function Home() {
                       />
                     </div>
                   </a>
-                </Link>
+                </div>
                 {/* CoinMarketCap */}
-                <Link href={values.market_link}>
+                <div
+                  onClick={() =>
+                    toast.info("Coming Soon", {
+                      position: "top-right",
+                    })
+                  }
+                >
                   <a target="_blank">
-                    <div className={styles.content_footer} data-aos="fade-up">
+                    <div className={styles.content_footer}>
                       <Image
                         src={"/svg/" + values.market_img + ".svg"}
                         width={36}
@@ -937,20 +968,22 @@ export default function Home() {
                       />
                     </div>
                   </a>
-                </Link>
+                </div>
               </div>
             ))}
             {/* Buy Ducky Sections */}
             {footerValues.buy_ducky.map((values) => (
-              <div
-                key={values.ps_name}
-                className={styles.footer_titles}
-                data-aos="fade-up"
-              >
+              <div key={values.ps_name} className={styles.footer_titles}>
                 <h4>Buy Ducky</h4>
                 {/* PancakeSwap */}
-                <Link href={values.ps_link}>
-                  <a target="_blank">
+                <div
+                  onClick={() =>
+                    toast.info("Coming Soon", {
+                      position: "top-right",
+                    })
+                  }
+                >
+                  <a>
                     <div className={styles.content_footer}>
                       <Image
                         src={"/svg/" + values.ps_img + ".svg"}
@@ -965,14 +998,18 @@ export default function Home() {
                       />
                     </div>
                   </a>
-                </Link>
+                </div>
               </div>
             ))}
             {footerValues.information.map((values) => (
               <div
                 key={values.name}
                 className={styles.footer_titles}
-                data-aos="fade-up"
+                onClick={() =>
+                  toast.info("Coming Soon", {
+                    position: "top-right",
+                  })
+                }
               >
                 <h4>Information</h4>
                 <a target="_blank">
@@ -991,7 +1028,11 @@ export default function Home() {
               <div
                 key={values.name}
                 className={styles.footer_titles}
-                data-aos="fade-up"
+                onClick={() =>
+                  toast.info("Coming Soon", {
+                    position: "top-right",
+                  })
+                }
               >
                 <h4>Contact Us</h4>
                 <a target="_blank">
