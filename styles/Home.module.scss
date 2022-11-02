@@ -1,19 +1,23 @@
 .container {
-  background: #0a0a0b;
+  background: #0a0a0c;
   background-image: url("/img/bg.webp");
 }
 .navbar {
   position: fixed;
   width: 100%;
-  height: 64px;
-  background: rgba(0, 0, 0, 0.04);
+  background: rgba(10, 10, 12, 0.4);
   backdrop-filter: blur(20px);
+  padding: 12px 0;
   z-index: 10;
   .nav_wrapper {
     height: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    .logo {
+      width: 206px;
+      cursor: pointer;
+    }
     .nav_content_wrapper {
       display: flex;
       align-items: center;
@@ -49,6 +53,7 @@
   display: flex;
   align-items: center;
   .hero_wrapper {
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -116,6 +121,11 @@
   display: flex;
   align-items: center;
   gap: 12px;
+  .icon_x_wrapper {
+    position: relative;
+    width: 20px;
+    height: 20px;
+  }
   p {
     font-family: "MonumentExtended-Regular";
     font-size: 12px;
@@ -162,6 +172,7 @@
       margin: 20px 0;
     }
     p {
+      text-align: center;
       color: #ffffff99;
     }
     .product_card_wrapper {
@@ -710,11 +721,40 @@
 }
 
 @media (max-width: 720px) {
+  .navbar {
+    padding: 8px 0;
+    .nav_wrapper {
+      .logo {
+        width: 148px;
+      }
+      .nav_content_wrapper {
+        button {
+          padding: 11px 32px;
+        }
+      }
+    }
+  }
   .hero {
     .hero_wrapper {
+      gap: 38px;
       h1 {
-        width: 100%;
         max-width: 100%;
+        font-size: 28px;
+      }
+      .taglines_wrapper {
+        gap: 18px;
+        .tagline {
+          display: flex;
+          align-items: center;
+          gap: 8px;
+          p {
+            font-size: 14px;
+          }
+        }
+      }
+      button {
+        font-size: 14px;
+        padding: 15px 26px;
       }
     }
   }
@@ -722,20 +762,41 @@
     .section_wrapper {
       .content {
         max-width: 100%;
+        .subtitle_decoration {
+          justify-content: center;
+        }
+        h1,
+        p {
+          text-align: center;
+        }
+        p {
+          height: 22px;
+        }
       }
       .char {
         .video_duck {
-          width: 360px;
-          height: 360px;
+          width: 100%;
+          height: auto;
         }
       }
+    }
+  }
+  .subtitle_decoration {
+    gap: 8px;
+    .icon_x_wrapper {
+      width: 12px;
+      height: 12px;
+    }
+    p {
+      font-size: 10px;
+      font-weight: 400;
     }
   }
   .do_airdrop_get_ducky {
     .section_wrapper {
       .card_vector_wrapper {
-        width: 360px;
-        height: 320px;
+        width: 280px;
+        height: 240px;
       }
     }
   }
@@ -750,6 +811,15 @@
     .section_wrapper {
       .range_wrapper {
         .range {
+          width: 100%;
+        }
+      }
+    }
+  }
+  .our_roadmap {
+    .section_wrapper {
+      .card_wrapper {
+        .card {
           width: 100%;
         }
       }
