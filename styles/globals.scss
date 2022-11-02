@@ -87,11 +87,25 @@ button:hover {
     width: 25%;
   }
 }
+[data-aos="range-17"] {
+  width: 4%;
+  transition-property: width;
+  &.aos-animate {
+    width: 17%;
+  }
+}
 [data-aos="range-15"] {
   width: 4%;
   transition-property: width;
   &.aos-animate {
     width: 15%;
+  }
+}
+[data-aos="range-13"] {
+  width: 4%;
+  transition-property: width;
+  &.aos-animate {
+    width: 13%;
   }
 }
 [data-aos="range-10"] {
@@ -108,13 +122,13 @@ button:hover {
   }
 }
 
-@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
-  only screen and (-o-min-device-pixel-ratio: 3/2),
-  only screen and (min--moz-device-pixel-ratio: 1.5),
-  only screen and (min-device-pixel-ratio: 1.5) {
-  html,
-  body {
-    width: 100%;
-    overflow-x: hidden;
-  }
-}
+// @media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+//   only screen and (-o-min-device-pixel-ratio: 3/2),
+//   only screen and (min--moz-device-pixel-ratio: 1.5),
+//   only screen and (min-device-pixel-ratio: 1.5) {
+//   html,
+//   body {
+//     width: 100%;
+//     overflow-x: hidden;
+//   }
+// }
