@@ -172,35 +172,27 @@ export default function Home() {
               <button>Ducky DApp</button>
             </div>
             <div className={styles.char}>
-              <div className={styles.duck_vector}>
-                <Image
-                  src={"/svg/ducky-go.svg"}
-                  layout="fill"
-                  objectFit="contain"
-                />
-              </div>
-            </div>
-            {/* <div className={styles.char}>
-              <video className={styles.video_duck} autoPlay muted loop>
+              <video
+                autoPlay
+                muted
+                loop
+                playsinline
+                className={styles.video_duck}
+              >
                 <source src={"/img/3d-anim.webm"} type="video/webm" />
               </video>
-            </div> */}
+            </div>
           </div>
         </section>
         <section className={styles.ducky_go_go}>
           <div className={`wrapper ${styles.section_wrapper}`}>
-            <div className={styles.char}>
-              <video className={styles.video_duck} autoPlay muted loop>
-                <source src={"/img/3d-anim.webm"} type="video/webm" />
-              </video>
-            </div>
-            {/* <div className={styles.duck_vector}>
+            <div className={styles.duck_vector}>
               <Image
                 src={"/svg/ducky-go.svg"}
                 layout="fill"
                 objectFit="contain"
               />
-            </div> */}
+            </div>
             <div className={styles.content} data-aos="fade-right">
               <div className={styles.subtitle_decoration}>
                 <div className={styles.icon_x_wrapper}>
