@@ -177,6 +177,7 @@ export default function Home() {
                 muted
                 loop
                 playsinline
+                src={"/img/3d-anim.webm"}
                 className={styles.video_duck}
               >
                 <source src={"/img/3d-anim.webm"} type="video/webm" />
