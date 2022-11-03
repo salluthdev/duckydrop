@@ -182,7 +182,7 @@ export default function Home() {
           <div className={`wrapper ${styles.section_wrapper}`}>
             <div className={styles.duck_vector}>
               <Image
-                src={"/img/ducky-go.webp"}
+                src={"/svg/ducky-go.svg"}
                 layout="fill"
                 objectFit="contain"
               />
