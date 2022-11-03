@@ -299,8 +299,8 @@ export default function Home() {
                   <div className={styles.content_mid}>
                     <h2>Multi-Chain DApp</h2>
                     <p>
-                      Allows users to bridging with pegged tokens or liquidity
-                      pools.
+                      Multiple EVM networks as a bridge to support users’
+                      marketing campaigns.
                     </p>
                   </div>
                 </div>
@@ -342,8 +342,8 @@ export default function Home() {
                   <div className={styles.content_mid}>
                     <h2>Reusable Airdrop</h2>
                     <p>
-                      Allows users to bridging with pegged tokens or liquidity
-                      pools.
+                      Accessible and valuable for projects to send rewards and
+                      prizes fluently.
                     </p>
                   </div>
                 </div>
@@ -385,8 +385,8 @@ export default function Home() {
                   <div className={styles.content_mid}>
                     <h2>Instant Airdrop</h2>
                     <p>
-                      Allows users to bridging with pegged tokens or liquidity
-                      pools.
+                      An affordable automatic distribution of tokens to owners
+                      of specific assets or balances
                     </p>
                   </div>
                 </div>
@@ -428,8 +428,8 @@ export default function Home() {
                   <div className={styles.content_mid}>
                     <h2>Ducky Hunter</h2>
                     <p>
-                      Allows users to bridging with pegged tokens or liquidity
-                      pools.
+                      A beneficent space between the project owner and airdrop
+                      hunter community.
                     </p>
                   </div>
                 </div>
@@ -885,6 +885,9 @@ export default function Home() {
                   </div>
                   <div className={styles.content}>
                     <p>Private Round</p>
+                  </div>
+                  <div className={styles.content}>
+                    <p>CMC, CG, BSC Scan Listing</p>
                   </div>
                 </div>
               </div>
