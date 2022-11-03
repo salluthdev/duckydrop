@@ -176,8 +176,7 @@ export default function Home() {
                 autoPlay
                 muted
                 loop
-                playsinline
-                src={"/img/3d-anim.webm"}
+                playsInline
                 className={styles.video_duck}
               >
                 <source src={"/img/3d-anim.webm"} type="video/webm" />
