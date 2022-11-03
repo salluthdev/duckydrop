@@ -102,6 +102,11 @@
         width: 600px;
         height: 600px;
       }
+      .duck_vector {
+        position: relative;
+        width: 454px;
+        height: 430px;
+      }
     }
   }
 }
@@ -242,7 +247,7 @@
     }
     .product_card_wrapper {
       display: grid;
-      grid-template-columns: repeat(4, 1fr);
+      grid-template-columns: repeat(3, 1fr);
       align-items: center;
       gap: 24px;
       margin-top: 64px;
