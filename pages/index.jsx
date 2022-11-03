@@ -122,7 +122,6 @@ export default function Home() {
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
       <header className={styles.navbar}>
         <div className={`wrapper ${styles.nav_wrapper}`}>
           <Link href="/">
@@ -145,53 +144,49 @@ export default function Home() {
       <main>
         <section className={styles.hero}>
           <div className={`wrapper ${styles.hero_wrapper}`}>
-            <h1>
-              Massdropping Crypto in a <span>Ducky</span> Way
-            </h1>
-            <div className={styles.taglines_wrapper}>
-              <div className={styles.tagline}>
+            <div className={styles.content_wrapper}>
+              <h1>
+                Massdropping Crypto in a <span>Ducky</span> Way
+              </h1>
+              <div className={styles.taglines_wrapper}>
+                <div className={styles.tagline}>
+                  <p>Fast</p>
+                </div>
                 <Image
-                  src={"/svg/icon-tagline-flash.svg"}
-                  width={24}
-                  height={24}
-                  alt="Tagline - Fast"
+                  src={"/svg/icon-tagline-blink.svg"}
+                  width={22}
+                  height={22}
                 />
-                <p>Fast</p>
-              </div>
-              <Image
-                src={"/svg/icon-tagline-star.svg"}
-                width={22}
-                height={22}
-              />
-              <div className={styles.tagline}>
+                <div className={styles.tagline}>
+                  <p>Cheap</p>
+                </div>
                 <Image
-                  src={"/svg/icon-tagline-discount.svg"}
-                  width={24}
-                  height={24}
-                  alt="Tagline - Cheap"
+                  src={"/svg/icon-tagline-blink.svg"}
+                  width={22}
+                  height={22}
                 />
-                <p>Cheap</p>
+                <div className={styles.tagline}>
+                  <p>Ducky</p>
+                </div>
               </div>
-              <Image
-                src={"/svg/icon-tagline-star.svg"}
-                width={22}
-                height={22}
-              />
-              <div className={styles.tagline}>
-                <Image
-                  src={"/svg/icon-tagline-ducky.svg"}
-                  width={24}
-                  height={24}
-                  alt="Tagline - Ducky"
-                />
-                <p>Ducky</p>
-              </div>
+              <button>Ducky DApp</button>
             </div>
-            <button>Ducky DApp</button>
+            <div className={styles.char}>
+              <video className={styles.video_duck} autoPlay muted loop>
+                <source src={"/img/3d-anim.webm"} type="video/webm" />
+              </video>
+            </div>
           </div>
         </section>
         <section className={styles.ducky_go_go}>
           <div className={`wrapper ${styles.section_wrapper}`}>
+            <div className={styles.duck_vector}>
+              <Image
+                src={"/svg/ducky-go.svg"}
+                layout="fill"
+                objectFit="contain"
+              />
+            </div>
             <div className={styles.content} data-aos="fade-right">
               <div className={styles.subtitle_decoration}>
                 <div className={styles.icon_x_wrapper}>
@@ -211,16 +206,6 @@ export default function Home() {
                 coin/token to a hundred and thousand wallet addresses without
                 any drama needed.
               </p>
-            </div>
-            <div
-              className={styles.char}
-              data-aos="ducky_anim"
-              data-aos-delay="200"
-              data-aos-duration={3000}
-            >
-              <video className={styles.video_duck} autoPlay muted loop>
-                <source src={"/img/3d-anim.webm"} type="video/webm" />
-              </video>
             </div>
           </div>
         </section>
@@ -292,21 +277,24 @@ export default function Home() {
               <div className={styles.product_card} data-aos="flip-left">
                 <div className={styles.content_wrapper}>
                   <div className={styles.content_top}>
-                    <Image
-                      src={"/svg/card-product-top-left-yellow.svg"}
-                      width={32}
-                      height={32}
-                    />
-                    <Image
-                      src={"/svg/card-product-top-mid.svg"}
-                      width={94}
-                      height={23}
-                    />
-                    <Image
-                      src={"/svg/card-product-top-right.svg"}
-                      width={23}
-                      height={23}
-                    />
+                    <div className={styles.left}>
+                      <Image
+                        src={"/svg/card-product-top-left-yellow.svg"}
+                        layout="fill"
+                      />
+                    </div>
+                    <div className={styles.mid}>
+                      <Image
+                        src={"/svg/card-product-top-mid.svg"}
+                        layout="fill"
+                      />
+                    </div>
+                    <div className={styles.right}>
+                      <Image
+                        src={"/svg/card-product-top-right.svg"}
+                        layout="fill"
+                      />
+                    </div>
                   </div>
                   <div className={styles.content_mid}>
                     <h2>Multi-Chain DApp</h2>
@@ -317,11 +305,12 @@ export default function Home() {
                   </div>
                 </div>
                 <div className={styles.icon_wrapper}>
-                  <Image
-                    src={"/svg/card-product-icon-yellow.svg"}
-                    width={40}
-                    height={40}
-                  />
+                  <div className={styles.icon}>
+                    <Image
+                      src={"/svg/card-product-icon-yellow.svg"}
+                      layout="fill"
+                    />
+                  </div>
                 </div>
               </div>
               <div
@@ -331,21 +320,24 @@ export default function Home() {
               >
                 <div className={styles.content_wrapper}>
                   <div className={styles.content_top}>
-                    <Image
-                      src={"/svg/card-product-top-left-green.svg"}
-                      width={32}
-                      height={32}
-                    />
-                    <Image
-                      src={"/svg/card-product-top-mid.svg"}
-                      width={94}
-                      height={23}
-                    />
-                    <Image
-                      src={"/svg/card-product-top-right.svg"}
-                      width={23}
-                      height={23}
-                    />
+                    <div className={styles.left}>
+                      <Image
+                        src={"/svg/card-product-top-left-green.svg"}
+                        layout="fill"
+                      />
+                    </div>
+                    <div className={styles.mid}>
+                      <Image
+                        src={"/svg/card-product-top-mid.svg"}
+                        layout="fill"
+                      />
+                    </div>
+                    <div className={styles.right}>
+                      <Image
+                        src={"/svg/card-product-top-right.svg"}
+                        layout="fill"
+                      />
+                    </div>
                   </div>
                   <div className={styles.content_mid}>
                     <h2>Reusable Airdrop</h2>
@@ -356,11 +348,12 @@ export default function Home() {
                   </div>
                 </div>
                 <div className={styles.icon_wrapper}>
-                  <Image
-                    src={"/svg/card-product-icon-green.svg"}
-                    width={40}
-                    height={40}
-                  />
+                  <div className={styles.icon}>
+                    <Image
+                      src={"/svg/card-product-icon-green.svg"}
+                      layout="fill"
+                    />
+                  </div>
                 </div>
               </div>
               <div
@@ -370,21 +363,24 @@ export default function Home() {
               >
                 <div className={styles.content_wrapper}>
                   <div className={styles.content_top}>
-                    <Image
-                      src={"/svg/card-product-top-left-blue.svg"}
-                      width={32}
-                      height={32}
-                    />
-                    <Image
-                      src={"/svg/card-product-top-mid.svg"}
-                      width={94}
-                      height={23}
-                    />
-                    <Image
-                      src={"/svg/card-product-top-right.svg"}
-                      width={23}
-                      height={23}
-                    />
+                    <div className={styles.left}>
+                      <Image
+                        src={"/svg/card-product-top-left-blue.svg"}
+                        layout="fill"
+                      />
+                    </div>
+                    <div className={styles.mid}>
+                      <Image
+                        src={"/svg/card-product-top-mid.svg"}
+                        layout="fill"
+                      />
+                    </div>
+                    <div className={styles.right}>
+                      <Image
+                        src={"/svg/card-product-top-right.svg"}
+                        layout="fill"
+                      />
+                    </div>
                   </div>
                   <div className={styles.content_mid}>
                     <h2>Instant Airdrop</h2>
@@ -395,11 +391,12 @@ export default function Home() {
                   </div>
                 </div>
                 <div className={styles.icon_wrapper}>
-                  <Image
-                    src={"/svg/card-product-icon-blue.svg"}
-                    width={40}
-                    height={40}
-                  />
+                  <div className={styles.icon}>
+                    <Image
+                      src={"/svg/card-product-icon-blue.svg"}
+                      layout="fill"
+                    />
+                  </div>
                 </div>
               </div>
               <div
@@ -409,21 +406,24 @@ export default function Home() {
               >
                 <div className={styles.content_wrapper}>
                   <div className={styles.content_top}>
-                    <Image
-                      src={"/svg/card-product-top-left-purple.svg"}
-                      width={32}
-                      height={32}
-                    />
-                    <Image
-                      src={"/svg/card-product-top-mid.svg"}
-                      width={94}
-                      height={23}
-                    />
-                    <Image
-                      src={"/svg/card-product-top-right.svg"}
-                      width={23}
-                      height={23}
-                    />
+                    <div className={styles.left}>
+                      <Image
+                        src={"/svg/card-product-top-left-purple.svg"}
+                        layout="fill"
+                      />
+                    </div>
+                    <div className={styles.mid}>
+                      <Image
+                        src={"/svg/card-product-top-mid.svg"}
+                        layout="fill"
+                      />
+                    </div>
+                    <div className={styles.right}>
+                      <Image
+                        src={"/svg/card-product-top-right.svg"}
+                        layout="fill"
+                      />
+                    </div>
                   </div>
                   <div className={styles.content_mid}>
                     <h2>Ducky Hunter</h2>
@@ -434,11 +434,12 @@ export default function Home() {
                   </div>
                 </div>
                 <div className={styles.icon_wrapper}>
-                  <Image
-                    src={"/svg/card-product-icon-purple.svg"}
-                    width={40}
-                    height={40}
-                  />
+                  <div className={styles.icon}>
+                    <Image
+                      src={"/svg/card-product-icon-purple.svg"}
+                      layout="fill"
+                    />
+                  </div>
                 </div>
               </div>
             </div>
@@ -706,6 +707,9 @@ export default function Home() {
                   <p>$DUCKY</p>
                 </div>
               </div>
+            </div>
+            <div className={styles.unsold_token}>
+              <p>Unsold token will be burned</p>
             </div>
             <div className={styles.range_wrapper}>
               <div className={styles.range}>
