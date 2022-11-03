@@ -1,6 +1,7 @@
 .container {
   background: #0a0a0c;
   background-image: url("/img/bg.webp");
+  overflow-x: hidden;
 }
 .navbar {
   position: fixed;
@@ -119,6 +120,50 @@
     }
   }
 }
+.token_banner {
+  height: 100px;
+  position: relative;
+  .banner_back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: #4a3d0c;
+    transform: rotate(1.22deg);
+  }
+  .banner_front {
+    width: 1400px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: #f7c70b;
+    transform: rotate(-1.44deg);
+    .section_wrapper {
+      max-width: 1400px;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 40px;
+      p {
+        min-width: 320px;
+        font-family: "MonumentExtended-Ultrabold";
+        font-size: 36px;
+        text-transform: uppercase;
+        color: #0a0a0c;
+      }
+      .icon_x_banner_wrapper {
+        position: relative;
+        width: 48px;
+        min-width: 48px;
+        height: 48px;
+      }
+    }
+  }
+}
 .subtitle_decoration {
   display: flex;
   align-items: center;
@@ -139,7 +184,7 @@
   }
 }
 .do_airdrop_get_ducky {
-  padding-bottom: 120px;
+  padding: 120px 0;
   .section_wrapper {
     display: flex;
     flex-direction: column;
@@ -783,6 +828,27 @@
         .video_duck {
           width: 100%;
           height: auto;
+        }
+      }
+    }
+  }
+  .token_banner {
+    height: 88px;
+    .banner_back {
+      height: 48px;
+    }
+    .banner_front {
+      height: 48px;
+      .section_wrapper {
+        gap: 20px;
+        p {
+          min-width: 180px;
+          font-size: 21px;
+        }
+        .icon_x_banner_wrapper {
+          width: 28px;
+          min-width: 28px;
+          height: 28px;
         }
       }
     }

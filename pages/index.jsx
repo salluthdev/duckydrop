@@ -224,6 +224,22 @@ export default function Home() {
             </div>
           </div>
         </section>
+        <section className={styles.token_banner}>
+          <div className={styles.banner_back}></div>
+          <div className={styles.banner_front}>
+            <div className={`wrapper ${styles.section_wrapper}`}>
+              <p>Ducky Drop</p>
+              <div className={styles.icon_x_banner_wrapper}>
+                <Image src={"/svg/icon-x-black.svg"} layout="fill" />
+              </div>
+              <p>Ducky Drop</p>
+              <div className={styles.icon_x_banner_wrapper}>
+                <Image src={"/svg/icon-x-black.svg"} layout="fill" />
+              </div>
+              <p>Ducky Drop</p>
+            </div>
+          </div>
+        </section>
         <section className={styles.do_airdrop_get_ducky}>
           <div className={`wrapper ${styles.section_wrapper}`}>
             <div className={styles.subtitle_decoration}>
