@@ -172,7 +172,13 @@ export default function Home() {
               <button>Ducky DApp</button>
             </div>
             <div className={styles.char}>
-              <video className={styles.video_duck} autoPlay muted loop>
+              <video
+                autoPlay
+                muted
+                loop
+                playsinline
+                className={styles.video_duck}
+              >
                 <source src={"/img/3d-anim.webm"} type="video/webm" />
               </video>
             </div>
@@ -437,6 +443,49 @@ export default function Home() {
                   <div className={styles.icon}>
                     <Image
                       src={"/svg/card-product-icon-purple.svg"}
+                      layout="fill"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div
+                className={styles.product_card}
+                data-aos="flip-left"
+                data-aos-delay="1600"
+              >
+                <div className={styles.content_wrapper}>
+                  <div className={styles.content_top}>
+                    <div className={styles.left}>
+                      <Image
+                        src={"/svg/card-product-top-left-yellow.svg"}
+                        layout="fill"
+                      />
+                    </div>
+                    <div className={styles.mid}>
+                      <Image
+                        src={"/svg/card-product-top-mid.svg"}
+                        layout="fill"
+                      />
+                    </div>
+                    <div className={styles.right}>
+                      <Image
+                        src={"/svg/card-product-top-right.svg"}
+                        layout="fill"
+                      />
+                    </div>
+                  </div>
+                  <div className={styles.content_mid}>
+                    <h2>
+                      VIP
+                      <br /> Duck
+                    </h2>
+                    <p>More locking, more earnings benefit as a VIP Duck.</p>
+                  </div>
+                </div>
+                <div className={styles.icon_wrapper}>
+                  <div className={styles.icon}>
+                    <Image
+                      src={"/svg/card-product-icon-yellow.svg"}
                       layout="fill"
                     />
                   </div>
