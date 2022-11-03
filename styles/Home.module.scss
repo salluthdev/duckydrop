@@ -1,6 +1,7 @@
 .container {
   background: #0a0a0c;
   background-image: url("/img/bg.webp");
+  overflow-x: hidden;
 }
 .navbar {
   position: fixed;
@@ -115,23 +116,51 @@
         position: relative;
         width: 680px;
         height: 680px;
-        // animation-name: ducky_anim;
-        // animation-duration: 5s;
-        // animation-fill-mode: forwards;
-        // animation-timing-function: ease;
       }
-      // @keyframes ducky_anim {
-      //   from {
-      //     top: -180px;
-      //     right: -180px;
-      //     transform: scale(0.2);
-      //   }
-      //   to {
-      //     top: 0;
-      //     right: 0;
-      //     transform: scale(1);
-      //   }
-      // }
+    }
+  }
+}
+.token_banner {
+  height: 100px;
+  position: relative;
+  .banner_back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: #4a3d0c;
+    transform: rotate(1.22deg);
+  }
+  .banner_front {
+    width: 1400px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: #f7c70b;
+    transform: rotate(-1.44deg);
+    .section_wrapper {
+      max-width: 1400px;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 40px;
+      p {
+        min-width: 320px;
+        font-family: "MonumentExtended-Ultrabold";
+        font-size: 36px;
+        text-transform: uppercase;
+        color: #0a0a0c;
+      }
+      .icon_x_banner_wrapper {
+        position: relative;
+        width: 48px;
+        min-width: 48px;
+        height: 48px;
+      }
     }
   }
 }
@@ -155,7 +184,7 @@
   }
 }
 .do_airdrop_get_ducky {
-  padding-bottom: 120px;
+  padding: 120px 0;
   .section_wrapper {
     display: flex;
     flex-direction: column;
@@ -783,6 +812,7 @@
     .section_wrapper {
       .content {
         max-width: 100%;
+        min-height: 240px;
         .subtitle_decoration {
           justify-content: center;
         }
@@ -798,6 +828,27 @@
         .video_duck {
           width: 100%;
           height: auto;
+        }
+      }
+    }
+  }
+  .token_banner {
+    height: 88px;
+    .banner_back {
+      height: 48px;
+    }
+    .banner_front {
+      height: 48px;
+      .section_wrapper {
+        gap: 20px;
+        p {
+          min-width: 180px;
+          font-size: 21px;
+        }
+        .icon_x_banner_wrapper {
+          width: 28px;
+          min-width: 28px;
+          height: 28px;
         }
       }
     }
