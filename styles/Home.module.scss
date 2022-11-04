@@ -246,10 +246,12 @@
       color: #ffffff99;
     }
     .product_card_wrapper {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
+      max-width: 1000px;
+      display: flex;
+      justify-content: center;
       align-items: center;
       gap: 24px;
+      flex-wrap: wrap;
       margin-top: 64px;
       .product_card {
         width: 260px;
@@ -775,13 +777,6 @@
       }
     }
   }
-  .our_product {
-    .section_wrapper {
-      .product_card_wrapper {
-        grid-template-columns: repeat(2, 1fr);
-      }
-    }
-  }
   .our_flow {
     .section_wrapper {
       .flow_wrapper {
@@ -792,13 +787,6 @@
         .img_connector_mobile {
           display: block;
         }
-      }
-    }
-  }
-  .our_partners {
-    .section_wrapper {
-      .logos_wrapper {
-        grid-template-columns: repeat(3, 1fr);
       }
     }
   }
@@ -877,13 +865,6 @@
             }
           }
         }
-      }
-    }
-  }
-  .our_partners {
-    .section_wrapper {
-      .logos_wrapper {
-        grid-template-columns: repeat(2, 1fr);
       }
     }
   }
@@ -995,13 +976,6 @@
       }
     }
   }
-  .our_partners {
-    .section_wrapper {
-      .logos_wrapper {
-        grid-template-columns: repeat(1, 1fr);
-      }
-    }
-  }
   .tokenomics {
     .section_wrapper {
       .unsold_token {
@@ -1032,7 +1006,6 @@
   .our_product {
     .section_wrapper {
       .product_card_wrapper {
-        grid-template-columns: 1fr;
         gap: 24px;
         .product_card {
           width: 260px;

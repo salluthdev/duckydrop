@@ -171,7 +171,11 @@ export default function Home() {
               </div>
               <button>Ducky DApp</button>
             </div>
-            <div className={styles.char}>
+            <div
+              className={styles.char}
+              data-aos="ducky_anim"
+              data-aos-duration={3000}
+            >
               <video
                 autoPlay
                 loop
