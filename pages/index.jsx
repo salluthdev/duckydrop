@@ -171,11 +171,7 @@ export default function Home() {
               </div>
               <button>Ducky DApp</button>
             </div>
-            <div
-              className={styles.char}
-              data-aos="ducky_anim"
-              data-aos-duration={3000}
-            >
+            <div className={styles.char}>
               <video
                 autoPlay
                 loop
@@ -184,9 +180,12 @@ export default function Home() {
                 className={styles.video_duck}
               >
                 <source src={"/img/3d-anim.webm"} type="video/webm"></source>
-                <source src={"/img/3d-anim.ogv"} type="video/ogg"></source>
-                <source src={"/img/3d-anim.mp4"} type="video/mp4"></source>
               </video>
+              {/* <object
+                data={"/img/3d-anim.mp4"}
+                width="400px"
+                height="400px"
+              ></object> */}
             </div>
           </div>
         </section>
@@ -503,11 +502,13 @@ export default function Home() {
         <section className={styles.our_flow}>
           <div className={`wrapper ${styles.section_wrapper}`}>
             <div className={styles.subtitle_decoration}>
-              <Image src={"/svg/icon-x-black.svg"} width={20} height={20} />
-              <p className={styles.black}>Step for Use</p>
-              <Image src={"/svg/icon-x-black.svg"} width={20} height={20} />
+              <Image src={"/svg/icon-x-yellow.svg"} width={20} height={20} />
+              <p>Step for Use</p>
+              <Image src={"/svg/icon-x-yellow.svg"} width={20} height={20} />
             </div>
-            <h2>Our Flow</h2>
+            <h1>
+              Our <span>Flow</span>
+            </h1>
             <p>Learn the steps or process how to use our platform.</p>
             <div className={styles.flow_wrapper}>
               <div className={styles.flow}>
