@@ -397,7 +397,7 @@ export default function Home() {
                     <h2>Instant Airdrop</h2>
                     <p>
                       An affordable automatic distribution of tokens to owners
-                      of specific assets or balances
+                      of specific assets or balances.
                     </p>
                   </div>
                 </div>
