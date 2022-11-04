@@ -120,7 +120,7 @@ export default function Home() {
           name="description"
           content="Want to send a crypto airdrop? Use Ducky Drop and massdropping crypto in a ducky way!"
         />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/img/favicon.png" />
       </Head>
       <header className={styles.navbar}>
         <div className={`wrapper ${styles.nav_wrapper}`}>
@@ -174,8 +174,8 @@ export default function Home() {
             <div className={styles.char}>
               <video
                 autoPlay
-                muted
                 loop
+                muted
                 playsInline
                 className={styles.video_duck}
                 src={"/img/3d-anim.webm"}
@@ -188,7 +188,7 @@ export default function Home() {
           <div className={`wrapper ${styles.section_wrapper}`}>
             <div className={styles.duck_vector}>
               <Image
-                src={"/img/ducky-go.png"}
+                src={"/svg/ducky-go.svg"}
                 layout="fill"
                 objectFit="contain"
               />
