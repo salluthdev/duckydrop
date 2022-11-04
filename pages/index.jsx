@@ -181,11 +181,6 @@ export default function Home() {
               >
                 <source src={"/img/3d-anim.webm"} type="video/webm"></source>
               </video>
-              {/* <object
-                data={"/img/3d-anim.mp4"}
-                width="400px"
-                height="400px"
-              ></object> */}
             </div>
           </div>
         </section>
@@ -411,7 +406,7 @@ export default function Home() {
                 </div>
               </div>
               <div
-                className={`${styles.product_card} ${styles.purple}`}
+                className={`${styles.product_card} ${styles.aqua}`}
                 data-aos="flip-left"
                 data-aos-delay="1200"
               >
@@ -419,7 +414,7 @@ export default function Home() {
                   <div className={styles.content_top}>
                     <div className={styles.left}>
                       <Image
-                        src={"/svg/card-product-top-left-purple.svg"}
+                        src={"/svg/card-product-top-left-aqua.svg"}
                         layout="fill"
                       />
                     </div>
@@ -447,14 +442,14 @@ export default function Home() {
                 <div className={styles.icon_wrapper}>
                   <div className={styles.icon}>
                     <Image
-                      src={"/svg/card-product-icon-purple.svg"}
+                      src={"/svg/card-product-icon-aqua.svg"}
                       layout="fill"
                     />
                   </div>
                 </div>
               </div>
               <div
-                className={styles.product_card}
+                className={`${styles.product_card} ${styles.purple}`}
                 data-aos="flip-left"
                 data-aos-delay="1600"
               >
@@ -462,7 +457,7 @@ export default function Home() {
                   <div className={styles.content_top}>
                     <div className={styles.left}>
                       <Image
-                        src={"/svg/card-product-top-left-yellow.svg"}
+                        src={"/svg/card-product-top-left-purple.svg"}
                         layout="fill"
                       />
                     </div>
@@ -490,7 +485,7 @@ export default function Home() {
                 <div className={styles.icon_wrapper}>
                   <div className={styles.icon}>
                     <Image
-                      src={"/svg/card-product-icon-yellow.svg"}
+                      src={"/svg/card-product-icon-purple.svg"}
                       layout="fill"
                     />
                   </div>
