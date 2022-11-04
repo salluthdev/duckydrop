@@ -180,6 +180,7 @@ export default function Home() {
                 className={styles.video_duck}
               >
                 <source src={"/img/3d-anim.webm"} type="video/webm"></source>
+                <source src={"/img/3d-anim.ogv"} type="video/ogg"></source>
                 <source src={"/img/3d-anim.mp4"} type="video/mp4"></source>
               </video>
             </div>
