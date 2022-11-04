@@ -509,99 +509,56 @@ export default function Home() {
             <p>Learn the steps or process how to use our platform.</p>
             <div className={styles.flow_wrapper}>
               <div className={styles.flow}>
-                <p>Connect Wallet</p>
+                <div className={styles.yellow_circle}>
+                  <p>1</p>
+                </div>
+                <div className={styles.label}>
+                  <p>Connect Wallet</p>
+                </div>
               </div>
-              <div data-aos="fade-left" data-aos-delay="200">
-                <img
-                  src={"/svg/our-flow-connector.svg"}
-                  width={56}
-                  height={24}
-                  className={styles.img_connector_desktop}
-                />
+              <div className={styles.connector}>
+                <div className={styles.line}></div>
               </div>
-              <div data-aos="fade-up">
-                <img
-                  src={"/svg/our-flow-connector-mobile.svg"}
-                  width={24}
-                  height={56}
-                  className={styles.img_connector_mobile}
-                />
+              <div className={styles.flow}>
+                <div className={styles.yellow_circle}>
+                  <p>2</p>
+                </div>
+                <div className={styles.label}>
+                  <p>Choose Network</p>
+                </div>
               </div>
-              <div
-                className={styles.flow}
-                data-aos="fade-left"
-                data-aos-delay="400"
-              >
-                <p>Choose Network</p>
+              <div className={styles.connector}>
+                <div className={styles.line}></div>
               </div>
-              <div data-aos="fade-left" data-aos-delay="600">
-                <img
-                  src={"/svg/our-flow-connector.svg"}
-                  width={56}
-                  height={24}
-                  className={styles.img_connector_desktop}
-                />
+              <div className={styles.flow}>
+                <div className={styles.yellow_circle}>
+                  <p>3</p>
+                </div>
+                <div className={styles.label}>
+                  <p>Paste Address</p>
+                </div>
               </div>
-              <div data-aos="fade-up">
-                <img
-                  src={"/svg/our-flow-connector-mobile.svg"}
-                  width={24}
-                  height={56}
-                  className={styles.img_connector_mobile}
-                />
+              <div className={styles.connector}>
+                <div className={styles.line}></div>
               </div>
-              <div
-                className={styles.flow}
-                data-aos="fade-left"
-                data-aos-delay="800"
-              >
-                <p>Paste Address</p>
+              <div className={styles.flow}>
+                <div className={styles.yellow_circle}>
+                  <p>4</p>
+                </div>
+                <div className={styles.label}>
+                  <p>Insert Wallet</p>
+                </div>
               </div>
-              <div data-aos="fade-left" data-aos-delay="1000">
-                <img
-                  src={"/svg/our-flow-connector.svg"}
-                  width={56}
-                  height={24}
-                  className={styles.img_connector_desktop}
-                />
+              <div className={styles.connector}>
+                <div className={styles.line}></div>
               </div>
-              <div data-aos="fade-up">
-                <img
-                  src={"/svg/our-flow-connector-mobile.svg"}
-                  width={24}
-                  height={56}
-                  className={styles.img_connector_mobile}
-                />
-              </div>
-              <div
-                className={styles.flow}
-                data-aos="fade-left"
-                data-aos-delay="1200"
-              >
-                <p>Insert Wallet</p>
-              </div>
-              <div data-aos="fade-left" data-aos-delay="1400">
-                <img
-                  src={"/svg/our-flow-connector.svg"}
-                  width={56}
-                  height={24}
-                  className={styles.img_connector_desktop}
-                />
-              </div>
-              <div data-aos="fade-up">
-                <img
-                  src={"/svg/our-flow-connector-mobile.svg"}
-                  width={24}
-                  height={56}
-                  className={styles.img_connector_mobile}
-                />
-              </div>
-              <div
-                className={styles.flow}
-                data-aos="fade-left"
-                data-aos-delay="1600"
-              >
-                <p>Ducky</p>
+              <div className={styles.flow}>
+                <div className={styles.yellow_circle}>
+                  <p>5</p>
+                </div>
+                <div className={styles.label}>
+                  <p>Ducky</p>
+                </div>
               </div>
             </div>
           </div>
