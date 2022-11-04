@@ -178,9 +178,10 @@ export default function Home() {
                 muted
                 playsInline
                 className={styles.video_duck}
-                src={"/img/3d-anim.webm"}
-                type="video/webm"
-              ></video>
+              >
+                <source src={"/img/3d-anim.webm"} type="video/webm"></source>
+                <source src={"/img/3d-anim.mp4"} type="video/mp4"></source>
+              </video>
             </div>
           </div>
         </section>
