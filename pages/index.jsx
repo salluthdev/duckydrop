@@ -178,9 +178,9 @@ export default function Home() {
                 loop
                 playsInline
                 className={styles.video_duck}
-              >
-                <source src={"/img/3d-anim.webm"} type="video/webm" />
-              </video>
+                src={"/img/3d-anim.webm"}
+                type="video/webm"
+              ></video>
             </div>
           </div>
         </section>
