@@ -120,7 +120,7 @@ export default function Home() {
           name="description"
           content="Want to send a crypto airdrop? Use Ducky Drop and massdropping crypto in a ducky way!"
         />
-        <link rel="icon" href="/img/favicon.png" />
+        <link rel="icon" href="/svg/duck-icon.svg" />
       </Head>
       <header className={styles.navbar}>
         <div className={`wrapper ${styles.nav_wrapper}`}>
