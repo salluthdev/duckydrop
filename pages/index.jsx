@@ -13,6 +13,12 @@ export default function Home() {
     AOS.init({
       duration: 800,
     });
+    AOS.init({
+      disable: function () {
+        var maxWidth = 720;
+        return window.innerWidth < maxWidth;
+      },
+    });
   }, []);
 
   const FOOTER_DATA_V2 = [
@@ -180,9 +186,15 @@ export default function Home() {
                 className={styles.video_duck}
               >
                 <source src={"/img/3d-anim.webm"} type="video/webm"></source>
-                <source src={"/img/3d-anim.ogv"} type="video/ogg"></source>
-                <source src={"/img/3d-anim.mp4"} type="video/mp4"></source>
               </video>
+            </div>
+            <div className={styles.char_mobile}>
+              <Image
+                src={"/img/3d-anim.png"}
+                layout="fill"
+                objectFit="contain"
+                className={styles.img_duck}
+              />
             </div>
           </div>
         </section>
@@ -190,10 +202,17 @@ export default function Home() {
           <div className={`wrapper ${styles.section_wrapper}`}>
             <div className={styles.duck_vector}>
               <Image
-                src={"/svg/ducky-go.svg"}
+                src={"/svg/ducky-go-bg.svg"}
                 layout="fill"
                 objectFit="contain"
               />
+              <div className={styles.ducky_go}>
+                <Image
+                  src={"/svg/ducky-go.svg"}
+                  layout="fill"
+                  objectFit="contain"
+                />
+              </div>
             </div>
             <div className={styles.content} data-aos="fade-right">
               <div className={styles.subtitle_decoration}>
