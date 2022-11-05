@@ -205,6 +205,7 @@ export default function Home() {
                 src={"/svg/ducky-go-bg.svg"}
                 layout="fill"
                 objectFit="contain"
+                alt="Ducky Ducky Go Go"
               />
               <div className={styles.ducky_go}>
                 <Image
