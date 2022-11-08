@@ -1120,26 +1120,20 @@ export default function Home() {
               </div>
             ))}
             {footerValues.information.map((values) => (
-              <div
-                key={values.name}
-                className={styles.footer_titles}
-                onClick={() =>
-                  toast.info("Coming Soon", {
-                    position: "top-right",
-                  })
-                }
-              >
+              <div key={values.name} className={styles.footer_titles}>
                 <h4>Information</h4>
-                <a target="_blank">
-                  <div className={styles.content_footer}>
-                    <p>{values.name}</p>
-                    <Image
-                      src={"/svg/icon-target-link.svg"}
-                      width={16}
-                      height={16}
-                    />
-                  </div>
-                </a>
+                <Link href="/whitepaper/ducky-drop-pitchdeck.pdf">
+                  <a target="_blank">
+                    <div className={styles.content_footer}>
+                      <p>{values.name}</p>
+                      <Image
+                        src={"/svg/icon-target-link.svg"}
+                        width={16}
+                        height={16}
+                      />
+                    </div>
+                  </a>
+                </Link>
               </div>
             ))}
             {footerValues.contact_us.map((values) => (
